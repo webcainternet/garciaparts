@@ -1,1 +1,4 @@
 2014-01-14 7:29:46 - PHP Warning:  mail() [<a href='function.mail'>function.mail</a>]: Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\wamp\www\+bootstrap3\system\library\mail.php on line 150
+2015-04-28 1:11:46 - Módulo Correios (Brasil) -> produto com o peso acima do permitido (10Kg): Lorem ipsum dolor sit (13.5Kg)
+2015-04-28 1:12:18 - Módulo Correios (Brasil) -> produto com o peso acima do permitido (10Kg): Lorem ipsum dolor sit (13.5Kg)
+2015-04-28 1:12:38 - Módulo Correios (Brasil) -> produto com o peso acima do permitido (10Kg): Lorem ipsum dolor sit (13.5Kg)

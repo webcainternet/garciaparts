@@ -10,4 +10,7 @@ $_['text_checkout'] = 'Finalizar compra';
 
 $_['text_payment_profile'] = 'Perfil de pagamento';
 
+$_['text_category']      = 'Categorias';
+$_['text_latest_added']   = 'Últimos adicionado(s):';
+$_['text_items2']   = '%s';
 ?>

@@ -4,6 +4,14 @@
 </div>
 <div class="clear"></div>
 </section>
+<div>
+	<div class="container" style="border-top: solid 2px #B23332; padding-top: 20px;">
+		<div style="width: 49%; float: left; min-width: 575px; margin-bottom: 20px;">
+			<div class="fb-like" data-href="https://facebook.com/lojavirtual.digital" width="575" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+		</div>
+	</div>
+</div>
+
 <footer>
 	<div class="container">
 		<div class="row">

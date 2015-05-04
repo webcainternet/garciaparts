@@ -16,4 +16,10 @@ $_['text_order']        = 'Histórico de Pedidos';
 $_['text_wishlist']     = 'Lista de Desejos';
 $_['text_newsletter']   = 'Boletim Informativo';
 $_['text_powered']      = 'Powered By <a href="http://www.opencart.com">OpenCart</a><br /> %s &copy; %s';
+$_['text_follow']		= 'Estamos também';
+$_['text_support']		= 'Atendimento';
+$_['text_fb']			= 'Facebook';
+$_['text_twi']			= 'Twitter';
+$_['text_rss']			= 'Mercado Livre';
+$_['text_yt']			= 'Youtube';
 ?>

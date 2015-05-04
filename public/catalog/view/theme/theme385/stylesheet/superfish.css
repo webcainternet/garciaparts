@@ -39,7 +39,7 @@ ul.sf-menu > li > a {
 	text-transform:uppercase;
 }
 ul.sf-menu > li.current>a, ul.sf-menu > li>a:hover, ul.sf-menu > li.sfHover>a, ul.sf-menu > ul > li.active>a  {
-	color:#efc94c
+	color:#B23332
 	}
 .sf-menu .sf-mega {
 	display: none;
@@ -66,7 +66,7 @@ ul.sf-menu > li.current>a, ul.sf-menu > li>a:hover, ul.sf-menu > li.sfHover>a, u
 	text-align:left;
 	}
 .sf-mega-section >li a:hover, .sf-mega-section >li.sfHover>a {
-	color:#efc94c
+	color:#B23332
 	}
 .sf-mega-section >li a {
 	color:#31353d;
@@ -116,7 +116,7 @@ ul.sf-menu > li.current>a, ul.sf-menu > li>a:hover, ul.sf-menu > li.sfHover>a, u
 	}
 /*****************************************************/
 #menu-icon {
-	background: #efc94c;
+	background: #B23332;
 	color: #FFFFFF;
 	cursor: pointer;
 	display: block;
@@ -176,7 +176,7 @@ ul.sf-menu > li.current>a, ul.sf-menu > li>a:hover, ul.sf-menu > li.sfHover>a, u
 	height: 24px;
 	width: 24px;
   }
-  .sf-menu-phone  li  i {top: 8px;color:#efc94c; font-size:21px; padding:0 20px; right:5px}
+  .sf-menu-phone  li  i {top: 8px;color:#B23332; font-size:21px; padding:0 20px; right:5px}
   .sf-menu-phone  li i.icon-angle-up:before {content:'\f106' !important}
   .sf-menu-phone li i:hover { cursor: pointer; }
   .sf-menu-phone li i.opened { background-position: center 7px; }
