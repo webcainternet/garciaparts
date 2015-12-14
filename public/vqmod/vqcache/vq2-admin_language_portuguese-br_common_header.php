@@ -1,4 +1,9 @@
 <?php
+
+			    $_['text_mercadolivre_extension']    = 'Mercadolivre';
+			    $_['text_mercadolivre_dashboard']    = 'Dashboard';
+				$_['text_mercadolivre_setting']    = 'Setting';
+			
 // Heading
 $_['heading_title']         = 'Administração';
 

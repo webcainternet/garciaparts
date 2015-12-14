@@ -90,6 +90,14 @@ $(document).ready(function(){
           <li><a href="<?php echo $total; ?>"><?php echo $text_total; ?></a></li>
           <li><a href="<?php echo $feed; ?>"><?php echo $text_feed; ?></a></li>
           <li><a href="<?php echo $vqmod_manager; ?>"><?php echo $text_vqmod_manager; ?></a></li>
+
+			<li><a class="parent"><?php echo $text_mercadolivre_extension; ?></a>
+                <ul>
+                    <li><a href="<?php echo $mercadolivre_link_extension; ?>"><?php echo $text_mercadolivre_dashboard; ?></a></li>
+                    <li><a href="<?php echo $mercadolivre_link_setting; ?>"><?php echo $text_mercadolivre_setting; ?></a></li>
+                </ul>
+            </li>
+            
           <?php if ($openbay_show_menu == 1) { ?>
             <li><a class="parent"><?php echo $text_openbay_extension; ?></a>
                 <ul>

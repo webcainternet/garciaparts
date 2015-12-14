@@ -18,11 +18,11 @@
 	margin-left:-855px;
 	width:1710px;
 	} 
-#menu {padding-right:340px;}
+#menu {padding-right:0px;}
 #search {
 	position:absolute;
-	bottom:-62px;
-	right:16px;
+	bottom:15px;
+	right:0px;
 	margin:0;
 	padding:0px;
 	z-index:11;
@@ -282,7 +282,7 @@ header #logo {margin:78px 0 29px 10px}
 	top:3px;
 	right:10px;
 	background:none;
-	border-color:#B23332;
+	border-color:#006089;
 	}
 /******************* Cart *******************************/
 .cart-position #cart .heading span.link_a b, .cart-position #cart .heading span.link_a #cart-total, .cart-position #cart .heading span.link_a i.fa.fa-caret-down {display:none;}

@@ -10,6 +10,8 @@ abstract class Controller {
 
 	public function __construct($registry) {
 		$this->registry = $registry;
+ $this->load->library('mercadolivre'); $registry->set('mercadolivre', new Mercadolivre($registry)); 
+                
 	}
 
 	public function __get($key) {

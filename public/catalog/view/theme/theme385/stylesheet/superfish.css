@@ -1,26 +1,33 @@
 /*** ESSENTIAL STYLES ***/
 #menu {
-	background-color:#fff;
-	border:1px solid #ededed;
-	}
+	
+}
 .sf-menu {
   position: relative;
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
+ul.sf-menu > li {
+	background-color: #006089;
+
+}
+ul.sf-menu > li:hover {
+	background-color: #000;
+}
+
 ul.sf-menu > li:first-child {}
 ul.sf-menu > li {
 	float: left;
 	z-index: 10;
 	position:relative;
 	border-radius:0;
-	padding:23px 20px;
-	max-width:137px;
+	padding:10px 20px;
+	padding-top: 75px;
+	max-width:146.19px;
 	width:100%;
-	border-right:1px solid #ededed;
 	text-align:center;
-	
 	display:block;
 	vertical-align:top;
 	line-height:15px;
@@ -33,13 +40,13 @@ ul.sf-menu > li > a {
 	z-index: 1;
 	position: relative;
 	font-size:12px;
-	color:#31353d;
+	color: #fff;
 	text-decoration:none;
 	line-height:15px;
 	text-transform:uppercase;
 }
 ul.sf-menu > li.current>a, ul.sf-menu > li>a:hover, ul.sf-menu > li.sfHover>a, ul.sf-menu > ul > li.active>a  {
-	color:#B23332
+	color:#006089
 	}
 .sf-menu .sf-mega {
 	display: none;
@@ -66,7 +73,7 @@ ul.sf-menu > li.current>a, ul.sf-menu > li>a:hover, ul.sf-menu > li.sfHover>a, u
 	text-align:left;
 	}
 .sf-mega-section >li a:hover, .sf-mega-section >li.sfHover>a {
-	color:#B23332
+	color:#006089
 	}
 .sf-mega-section >li a {
 	color:#31353d;
@@ -116,7 +123,7 @@ ul.sf-menu > li.current>a, ul.sf-menu > li>a:hover, ul.sf-menu > li.sfHover>a, u
 	}
 /*****************************************************/
 #menu-icon {
-	background: #B23332;
+	background: #006089;
 	color: #FFFFFF;
 	cursor: pointer;
 	display: block;
@@ -176,7 +183,7 @@ ul.sf-menu > li.current>a, ul.sf-menu > li>a:hover, ul.sf-menu > li.sfHover>a, u
 	height: 24px;
 	width: 24px;
   }
-  .sf-menu-phone  li  i {top: 8px;color:#B23332; font-size:21px; padding:0 20px; right:5px}
+  .sf-menu-phone  li  i {top: 8px;color:#006089; font-size:21px; padding:0 20px; right:5px}
   .sf-menu-phone  li i.icon-angle-up:before {content:'\f106' !important}
   .sf-menu-phone li i:hover { cursor: pointer; }
   .sf-menu-phone li i.opened { background-position: center 7px; }

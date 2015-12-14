@@ -182,66 +182,65 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 <div id="page">
 <div id="shadow">
 <div class="shadow"></div>
+
+<style type="text/css">
+	.cat_1, .cat_2, .cat_3, .cat_4, .cat_5, .cat_6, .cat_7, .cat_8 {
+		background: url(/image/icon_som.png) no-repeat;
+		background-size: 64px;
+    	background-position: 40px 10px;
+	}
+</style>
+
 <header id="header">
-	<div class="toprow">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12">
+
+	<div class="container">
+
+		<div class="row">
+			<div class="col-sm-12" style="float: right; top: 30px;">
 					<?php echo $language; ?>
 					<?php echo $currency; ?>
-					<ul class="links">
-						<?php if (!isset($this->request->get['route'])) { $route='active'; }  else {$route='';}?> <li class="first"><a class="<?php echo $route; if (isset($this->request->get['route']) && $this->request->get['route']=="common/home") {echo "active";} ?>" href="<?php echo $home; ?>"><i class="fa fa-home"></i><?php echo $text_home; ?></a></li>
-						<li><a class="<?php if (isset($this->request->get['route']) && $this->request->get['route']=="account/wishlist") {echo "active";} ?>" href="<?php echo $wishlist; ?>" id="wishlist-total"><i class="fa fa-star"></i><?php echo $text_wishlist; ?></a></li>
-						<li><a class="<?php if (isset($this->request->get['route']) && $this->request->get['route']=="account/account") {echo "active";} ?>" href="<?php echo $account; ?>"><i class="fa fa-user"></i><?php echo $text_account; ?></a></li>
-						<li><a class="<?php if (isset($this->request->get['route']) && $this->request->get['route']=="checkout/cart") {echo "active";} ?>" href="<?php echo $shopping_cart; ?>"><i class="fa fa-shopping-cart"></i><?php echo $text_shopping_cart; ?></a></li>
-						<li><a class="<?php if (isset($this->request->get['route']) && $this->request->get['route']=="checkout/checkout") {echo "active";} ?>" href="<?php echo $checkout; ?>"><i class="fa fa-check"></i><?php echo $text_checkout; ?></a></li>
-						</ul>
+					
 						<ul class="links" style="float: right;">
 						<?php if (!$logged) { ?>
-								<?php echo $text_welcome; ?>
-								<?php } else { ?>
-								<?php echo $text_logged; ?>
-								<?php } ?>
-					</ul>
+							<li><?php echo $text_welcome; ?></li>
+							<?php } else { ?>
+							<li><?php echo $text_logged; ?></li>
+							<?php } ?>
+						</ul>
+						<ul class="links" style="float: right;">
+							<li><a class="<?php if (isset($this->request->get['route']) && $this->request->get['route']=="account/account") {echo "active";} ?>" href="<?php echo $account; ?>"><i class="fa fa-user"></i><?php echo $text_account; ?></a></li>
+							<li><a class="<?php if (isset($this->request->get['route']) && $this->request->get['route']=="checkout/cart") {echo "active";} ?>" href="<?php echo $shopping_cart; ?>"><i class="fa fa-shopping-cart"></i><?php echo $text_shopping_cart; ?></a></li>
+							<li><a class="<?php if (isset($this->request->get['route']) && $this->request->get['route']=="checkout/checkout") {echo "active";} ?>" href="<?php echo $checkout; ?>"><i class="fa fa-check"></i><?php echo $text_checkout; ?></a></li>
+						</ul>
 					<div class="clear"></div>
 				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container">
-		<div class="toprow-1">
-			<div class="row">
-				<div class="col-sm-12">
-					<a class="swipe-control" href="#"><i class="fa fa-align-justify"></i></a>
-					<div class="top-search">
-						<i class="fa fa-search"></i>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-		<div class="row">
 			<div class="col-sm-12">
 				<div class="pr">
 					<?php if ($logo) { ?>
 						<div id="logo"><a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" /></a></div>
 					<?php } ?>
-					<div class="cart-position">
-						<div class="cart-inner"><?php echo $cart; ?></div>
-					</div>
-					<div class="phone">
-						<i class="fa fa-phone"></i>
-						<?php echo $telephone; ?>
+					<div style="background-color: blue;">
+						<div class="cart-position" style="float: right; width: 50px; position: absolute; right: 0px; top: 55px;">
+							<img src="/image/fone.png" style="width: 35px; margin-top: 3px;">
+						</div>
+
+						<div class="cart-position" style="float: right; width: 270px; position: absolute; right: 70px; top: 55px;">
+							<div class="cart-inner"><?php echo $cart; ?></div>
+						</div>
+						<div id="search" style="float: right; width: 310px; position: absolute; right: 370px; top: 60px;">
+							<div class="inner">
+								<div class="button-search"><i class="fa fa-search"></i></div>
+								<input type="search" name="search" placeholder="<?php echo $text_search; ?>" value="" />
+							</div>
+						</div>
+
 					</div>
 					<div class="phone textoheader">
-					Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um.
+						
+						
+
 					</div>
-					<div id="search">
-						<div class="inner">
-							<div class="button-search"><i class="fa fa-search"></i></div>
-							<input type="search" name="search" placeholder="<?php echo $text_search; ?>" value="" />
-						</div>
-					</div>
+					
 					<div class="clear"></div>
 				</div>
 			</div>

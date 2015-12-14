@@ -2,3 +2,17 @@
 2015-04-28 1:11:46 - Módulo Correios (Brasil) -> produto com o peso acima do permitido (10Kg): Lorem ipsum dolor sit (13.5Kg)
 2015-04-28 1:12:18 - Módulo Correios (Brasil) -> produto com o peso acima do permitido (10Kg): Lorem ipsum dolor sit (13.5Kg)
 2015-04-28 1:12:38 - Módulo Correios (Brasil) -> produto com o peso acima do permitido (10Kg): Lorem ipsum dolor sit (13.5Kg)
+2015-12-10 17:19:36 - MERCADOLIVRE Module --> Starting install
+2015-12-10 17:19:36 - MERCADOLIVRE Module --> Created oc_mercadolivre_product table
+2015-12-10 17:19:36 - MERCADOLIVRE Module --> Created oc_mercadolivre_category table
+2015-12-10 17:19:36 - MERCADOLIVRE Module --> Created oc_mercadolivre_status table
+2015-12-10 17:19:36 - MERCADOLIVRE Module --> Created oc_mercadolivre_listing_type table
+2015-12-10 17:19:36 - MERCADOLIVRE Module --> Created oc_mercadolivre_order table
+2015-12-10 17:19:36 - MERCADOLIVRE Module --> Created oc_mercadolivre_attr_combination table
+2015-12-10 17:19:36 - MERCADOLIVRE Module --> Created oc_mercadolivre_attribute table
+2015-12-10 17:19:37 - MERCADOLIVRE Module --> Created oc_mercadolivre_api_call table
+2015-12-10 17:19:37 - MERCADOLIVRE Module --> Completed install
+2015-12-10 17:24:28 - PHP Notice:  Trying to get property of non-object in /Users/fernandomendes/github/garciaparts/public/system/library/mercadolivre.php on line 969
+2015-12-10 17:24:29 - PHP Notice:  Trying to get property of non-object in /Users/fernandomendes/github/garciaparts/public/system/library/mercadolivre.php on line 942
+2015-12-10 21:43:13 - PHP Notice:  Undefined index: description in /Users/fernandomendes/github/garciaparts/public/vqmod/vqcache/vq2-admin_controller_design_banner.php on line 392
+2015-12-10 21:43:13 - PHP Notice:  Undefined index: description in /Users/fernandomendes/github/garciaparts/public/vqmod/vqcache/vq2-admin_controller_design_banner.php on line 392
