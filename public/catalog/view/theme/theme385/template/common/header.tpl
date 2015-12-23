@@ -185,10 +185,49 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 
 <style type="text/css">
 	.cat_1, .cat_2, .cat_3, .cat_4, .cat_5, .cat_6, .cat_7, .cat_8 {
-		background: url(/image/icon_som.png) no-repeat;
-		background-size: 64px;
-    	background-position: 40px 10px;
+    	
 	}
+	.cat_1 {
+		background: url(/image/icondepartamentos.png) no-repeat;
+		background-size: 42px;
+    	background-position: 60px 20px;
+	}
+	.cat_2 {
+		background: url(/image/iconsom.png) no-repeat;
+		background-size: 42px;
+    	background-position: 60px 18px;
+	}
+	.cat_3 {
+		background: url(/image/iconxenon.png) no-repeat;
+		background-size: 42px;
+    	background-position: 60px 18px;
+	}
+	.cat_4 {
+		background: url(/image/iconseguranca.png) no-repeat;
+		background-size: 42px;
+    	background-position: 60px 18px;
+	}
+	.cat_5 {
+		background: url(/image/iconmoto.png) no-repeat;
+		background-size: 64px;
+    	background-position: 50px 5px;
+	}
+	.cat_6 {
+		background: url(/image/iconpickup.png) no-repeat;
+		background-size: 72px;
+    	background-position: 40px 5px;
+	}
+	.cat_7 {
+		background: url(/image/iconpneu.png) no-repeat;
+		background-size: 42px;
+    	background-position: 60px 18px;
+	}
+	.cat_8 {
+		background: url(/image/icon_som.png) no-repeat;
+		background-size: 48px;
+		background-position: 55px 15px; 
+	}
+
 </style>
 
 <header id="header">

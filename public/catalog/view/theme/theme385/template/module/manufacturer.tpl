@@ -1,4 +1,4 @@
-<div class="clear"></div>
+<?php /* <div class="clear"></div>
 <div class="box man">
    <div class="box-man">
     <?php if ($manufacturers) { ?>
@@ -12,3 +12,4 @@
     <div class="clear"></div>
   </div>
 </div>
+*/ ?>
