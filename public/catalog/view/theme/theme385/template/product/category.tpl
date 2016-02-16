@@ -1,11 +1,5 @@
 <?php echo $header; ?>
 
-<style type="text/css">
-	.col-sm-9 {
-		width: 75%;
-	}
-</style>
-
 <?php echo $column_left; ?>
 		<div class="<?php if ($column_left or $column_right) { ?>col-sm-9<?php } ?> <?php if (!$column_left & !$column_left) { ?>col-sm-12  <?php } ?> <?php if ($column_left & $column_right) { ?>col-sm-6<?php } ?>" id="content"><?php echo $content_top; ?>
   <div class="breadcrumb">
@@ -33,10 +27,10 @@
 			<ul class="row"><?php $i=0;?>
 				<?php foreach ($categories as $category) { $i++; ?>
 				<?php 
-						if ($i%3==1) {
+						if ($i%4==1) {
 							$a='first-in-line';
 						}
-						elseif ($i%3==0) {
+						elseif ($i%4==0) {
 							$a='last-in-line';
 						}
 						else {
@@ -87,10 +81,10 @@
 	<ul class="row">
 		<?php $i=0; foreach ($products as $product) { $i++; ?>
 		<?php 
-			if ($i%3==1) {
+			if ($i%4==1) {
 				$a='first-in-line';
 			}
-			elseif ($i%3==0) {
+			elseif ($i%4==0) {
 				$a='last-in-line';
 			}
 			else {
