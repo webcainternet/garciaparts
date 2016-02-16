@@ -1,14 +1,8 @@
 <?php echo $header; ?>
 
 <style type="text/css">
-	.col-sm-3 {
-		display: none;
-	}
 	.col-sm-9 {
-		width: 100%;
-	}
-	.col-sm-4 {
-	    width: 25%;
+		width: 75%;
 	}
 </style>
 
@@ -39,10 +33,10 @@
 			<ul class="row"><?php $i=0;?>
 				<?php foreach ($categories as $category) { $i++; ?>
 				<?php 
-						if ($i%4==1) {
+						if ($i%3==1) {
 							$a='first-in-line';
 						}
-						elseif ($i%4==0) {
+						elseif ($i%3==0) {
 							$a='last-in-line';
 						}
 						else {
@@ -93,10 +87,10 @@
 	<ul class="row">
 		<?php $i=0; foreach ($products as $product) { $i++; ?>
 		<?php 
-			if ($i%4==1) {
+			if ($i%3==1) {
 				$a='first-in-line';
 			}
-			elseif ($i%4==0) {
+			elseif ($i%3==0) {
 				$a='last-in-line';
 			}
 			else {
