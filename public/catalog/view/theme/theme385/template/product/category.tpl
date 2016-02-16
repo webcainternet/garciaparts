@@ -7,6 +7,9 @@
 	.col-sm-9 {
 		width: 100%;
 	}
+	.col-sm-4 {
+	    width: 25%;
+	}
 </style>
 
 <?php echo $column_left; ?>
