@@ -3630,3 +3630,47 @@ li .padding:hover {
 .somentemercadolivre {
 	display: none;
 }
+
+
+
+
+/* WEBCA */
+.shipping-wrap {
+    background: #474747;
+    height: 100px;
+    line-height: 100px;
+}
+.shipping p {
+    background: url("/image/ship.png") left center no-repeat;
+    color: #ffffff;
+    display: inline-block;
+    margin-right: 14px;
+    line-height: 100px;
+    padding-left: 70px;
+    font-size: 20px;
+}
+.buttonss {
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    transition: 0.5s;
+    background: #ffffff;
+    border-radius: 10px;
+    font: 700 16px 'Open Sans' sans-serif;
+    padding: 10px 21px;
+    text-transform: uppercase;
+    color: #F69124;
+}
+#pagefooter {
+    overflow: hidden;
+    margin: 0 auto;
+}
+#pagetop {
+    overflow: hidden;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+#pagemenu {
+	height: 70px;
+}
