@@ -3673,3 +3673,9 @@ li .padding:hover {
 #pagemenu {
 	height: 70px;
 }
+
+
+/* remover zoom */
+.zoomContainer {
+	display: none !important; 
+}
