@@ -157,18 +157,14 @@ class ModelMercadolivreMercadolivre extends Model
 		 
 		 if($this->config->get('mercadolivre_image_in_desc')){
 			  foreach($list_images as $single_img){
-				 $product['description'].='<img src="'.$single_img['source'].'" border="0" /><br />';  
-				 $product['description'].='<hr>111';
-			  } 
-		 }  
+				 $product['description'].='<img src="'.$single_img['source'].'" border="5" /><br />';  
+			  }
+		 }
 	  
 	    /* Product template*/
-	    $product['description'].='<hr>222';
 	    if(strpos($mercadolivre_template,'__CONTENT__')!==false){
 	      $product['description']=str_replace('__CONTENT__',$product['description'],$mercadolivre_template);
-	    }
-	    $product['description'].='<hr>333';
-	       
+	    }	       
 	   
 	      
 		  
