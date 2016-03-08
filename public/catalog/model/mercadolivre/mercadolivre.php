@@ -153,14 +153,6 @@ class ModelMercadolivreMercadolivre extends Model
 	   
 	  /* end ML attribute*/  
 	  
-	     /* Add image in proudct description if set to yes*/
-		 
-		 if($this->config->get('mercadolivre_image_in_desc')){
-			  foreach($list_images as $single_img){
-				 $product['description'].='<img src="'.$single_img['source'].'" border="0" /><br />';  
-			  } 
-		 }  
-	  
 	    /* Product template*/
 	    
 	    if(strpos($mercadolivre_template,'__CONTENT__')!==false){
@@ -168,7 +160,13 @@ class ModelMercadolivreMercadolivre extends Model
 	    }
 	       
 	   
-	      
+	    /* Add image in proudct description if set to yes*/
+		 
+		 if($this->config->get('mercadolivre_image_in_desc')){
+			  foreach($list_images as $single_img){
+				 $product['description'].='<img src="'.$single_img['source'].'" border="0" /><br />';  
+			  } 
+		 }
 		  
 		  /* Trim product title if it is greater than 60*/
 		  if(strlen($product['name'])>60){
