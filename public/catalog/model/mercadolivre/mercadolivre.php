@@ -64,10 +64,10 @@ class ModelMercadolivreMercadolivre extends Model
 	   
 	
 	   
-	   /*fix special price issue*/
-	   $customer_group_id = $this->config->get('config_customer_group_id');
-	   $special_row=$this->db->query("SELECT price FROM " . DB_PREFIX . "product_special WHERE product_id = '".$product_id."' AND customer_group_id = '" . (int)$customer_group_id . "' AND ((date_start = '0000-00-00' OR date_start < NOW()) AND (date_end = '0000-00-00' OR date_end > NOW())) ORDER BY priority ASC, price ASC LIMIT 1")->row;
-	   if ($special_row && (float)$special_row['price']) {
+	   	/*fix special price issue*/
+	   	$customer_group_id = $this->config->get('config_customer_group_id');
+	   	$special_row=$this->db->query("SELECT price FROM " . DB_PREFIX . "product_special WHERE product_id = '".$product_id."' AND customer_group_id = '" . (int)$customer_group_id . "' AND ((date_start = '0000-00-00' OR date_start < NOW()) AND (date_end = '0000-00-00' OR date_end > NOW())) ORDER BY priority ASC, price ASC LIMIT 1")->row;
+	   	if ($special_row && (float)$special_row['price']) {
 				$product['price'] = $special_row['price'];
 	    }
 	   
@@ -157,9 +157,9 @@ class ModelMercadolivreMercadolivre extends Model
 		 
 		 if($this->config->get('mercadolivre_image_in_desc')){
 			  foreach($list_images as $single_img){
-				 $product['description'].='<img src="'.$single_img['source'].'" border="5" /><br />';  
-			  }
-		 }
+				 $product['description'] ='<img src="'.$single_img['source'].'" border="0" /><br />'.$product['description'];
+			  } 
+		 }  
 	  
 	    /* Product template*/
 	    if(strpos($mercadolivre_template,'__CONTENT__')!==false){
