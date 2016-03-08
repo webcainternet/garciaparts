@@ -157,7 +157,7 @@ class ModelMercadolivreMercadolivre extends Model
 		 
 		 if($this->config->get('mercadolivre_image_in_desc')){
 			  foreach($list_images as $single_img){
-				 $product['description'] ='<img src="'.$single_img['source'].'" border="0" /><br />'.$product['description'];
+				 $product['description'] ='<center><img src="'.$single_img['source'].'" border="0" /></center><br />'.$product['description'];
 			  } 
 		 }  
 	  
