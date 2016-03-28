@@ -94,6 +94,7 @@
 									  <span class="price-new"><?php echo $product['special']; ?></span><span class="price-old"><?php echo $product['price']; ?></span>
 									  <?php } ?>
 									  
+									  <? include $_SERVER['DOCUMENT_ROOT'] . '/catalog/view/theme/theme385/parcelamento.php'; ?>
 									</div>
 									<?php } ?>
 								</div>
@@ -140,6 +141,8 @@
 							<?php } else { ?>
 							<span class="price-new"><?php echo $product['special']; ?></span><span class="price-old"><?php echo $product['price']; ?></span>
 							<?php } ?>
+
+							<? include $_SERVER['DOCUMENT_ROOT'] . '/catalog/view/theme/theme385/parcelamento.php'; ?>
 						</div>
 						<?php } ?>
 						<div class="name maxheight-feat"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>

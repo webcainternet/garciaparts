@@ -103,6 +103,7 @@ $(document).ready(function() {
 
 </style>
 
+<?php /*
 <div style=" width: 100%; z-index: 999999;">
   <div style="background-color: rgba(255,255,255,0.95); height: 167px; width: 1170px; margin: auto;">
     
@@ -218,5 +219,6 @@ $(document).ready(function() {
 
   </div>
 </div>
+*/ ?>
 
 <div style="width: 100%; height: 40px; float: left;">&nbsp;</div>

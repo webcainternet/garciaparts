@@ -98,7 +98,7 @@
 			}
 		?>
 		<li class="col-sm-4 <?php echo $a?>">
-		<div class="padding">
+		<div class="padding" style="min-height: 470px;">
 		<?php if ($product['thumb']) { ?>
 		<div class="image"><a href="<?php echo $product['href']; ?>"><img id="img_<?php echo $product['product_id']; ?>" src="<?php echo $product['thumb']; ?>" title="<?php echo $product['name']; ?>" alt="<?php echo $product['name']; ?>" /></a></div>
 	  <?php } ?>
@@ -114,6 +114,8 @@
 		<?php } else { ?><span class="price-new"><?php echo $product['special']; ?></span>
 		<span class="price-old"><?php echo $product['price']; ?></span> 
 		<?php } ?>
+
+		<? include $_SERVER['DOCUMENT_ROOT'] . '/catalog/view/theme/theme385/parcelamento.php'; ?>
 		</div>
 		<?php } ?>
 		<div class="cart-button">
@@ -199,7 +201,7 @@ function display(view) {
 			var image = $(element).find('.image').html();
 			
 			if (image != null) {
-			html += '<div class="padding">';
+			html += '<div class="padding" style="min-height: 470px;">';
 				html += '<div class="image">' + image + '</div>';
 			}
 			html += '<div class="left">';

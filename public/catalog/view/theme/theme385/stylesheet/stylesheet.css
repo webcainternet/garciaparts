@@ -7,12 +7,13 @@ html, body {
 }
 body {
 	color: #bcbcbc;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	margin: 0px;
 	background:#ffffff;
 	font-size:12px;
 	line-height:18px;
 	min-width:260px;
+	background-color: #FAFAFA;
 	
 	}
 td, th, input, textarea, select, a {
@@ -55,7 +56,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, 'Open Sans', sans-serif;
 }
 
 label {
@@ -721,7 +722,7 @@ header #cart .cart .name small {
 	color: #666;
 }
 header #cart .cart .quantity {
-	font-family:Arial, Helvetica, sans-serif;
+	font-family:'Open Sans', sans-serif;
 	font-size:11px;
 	font-weight:bold;
 	color:#a6a4a4;
@@ -979,7 +980,7 @@ header .links a {
 	}
 .price.price-min {display:none;}
 .price {
-	font-size:25px;
+	font-size:16px;
 	color:#006089;
 	}
 .price .price-new {
@@ -1119,6 +1120,7 @@ header .links a {
 	color:#7e7e7e;
 	line-height:35px;
 	vertical-align:top;
+	    display: none;
 	}
 
 /*********************************************************************leftinfo***************************************************************************************************/
@@ -1288,40 +1290,38 @@ a.button i{
 	line-height:35px;
 	vertical-align:top;
 	text-align:center;
-	color:#fff;
-	background-color:#006089;
 	font-size:19.24px;
 	margin:-1px
 	}
 a.button {
 	display: inline-block;
-	text-decoration: none;
-	cursor: pointer;
-	background:#fff;
-	font-size:11px;
-	line-height:19px;
-	border:1px solid #e8e8e8;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 11px;
+    line-height: 19px;
+    background-color: #7FCE58;
+    color: #FFF;
 	}
+
+a.button:hover {
+    background-color: #9DCA87;
+}
 a.button span {
 	display: inline-block;
 	padding:7px 12px;
 	white-space:nowrap;
 	font-size: 12px;
-  	color: #006089;
 	font-weight:400;
 	line-height:19px;
 	text-transform:uppercase;
 	}
 a.button:hover {
-	background-color:#006089;
 	color: #FFFFFF;
 	}
 a.button:hover span {
-	background-color:#006089;
 	color: #FFFFFF;
 	}
 a.button:hover i {
-	background-color:#31353d;
 }
 a.button-i {
 	display:inline-block;
@@ -1422,7 +1422,7 @@ a.button-i i:hover {
 	line-height: 14px;
 }
 #module_cart .cart td.quantity {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	padding-top:0px;
 	vertical-align:middle;
 	}
@@ -1492,14 +1492,14 @@ a.button-i i:hover {
 }
 .box .box-heading {
 	font-family: 'Open Sans', sans-serif;
-	font-size:20px;
-	line-height:33px;
-	color:#fff;
-	margin-bottom:34px;
-	padding: 10px 0px;
-	border-bottom: solid 2px #006089;
-	color: #006089;
-	text-transform:uppercase;
+    font-size: 20px;
+    line-height: 33px;
+    margin-bottom: 34px;
+    padding: 15px 10px;
+    color: #31353d;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #F0F0F0;
 
 	}
 #content .box.featured {
@@ -2051,7 +2051,7 @@ h1.style-1 {
 	font-weight:normal;
 }
 .product-grid .cart {
-	float:left;
+	float:right;
 }
 .content-border h2{
 	margin-bottom:30px;
@@ -2115,8 +2115,8 @@ h1.style-1 {
 .product-info .image {
 	float: left;
 	width:100%;
-	max-width:270px;
-	max-height:424px;
+	/* max-width:270px;
+	max-height:424px; */
 	height:100%;
 	margin-bottom:7px;
 	/* background-color:#efeeee; */
@@ -2197,7 +2197,7 @@ h1.style-1 {
 	margin:0 9px;
 	}
 .product-info .price {
-	font-family: Arial, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	text-transform:uppercase;
 	color:#323232;
 	font-size:13px;
@@ -2481,7 +2481,7 @@ a.button-prod {
 	color:#4a4a4a
 	}
 .wishlist-product tbody .name a {
-	font-family: Arial, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	color:#006089;
 	font-size:16px;
 	}
@@ -2506,7 +2506,7 @@ a.button-prod {
 .table .total, .table .price {
 	text-align: center;
 	font-size:17px;
-	font-family: Arial, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	color:#006089;
 	font-weight:bold;
 }
@@ -3117,7 +3117,6 @@ footer {
 	padding-top:45px;
 	clear: both;
 	overflow: hidden;
-	background-color:#f5f6f6;
 	}
 footer h3 {
 	font-family: 'Open Sans', sans-serif;
@@ -3612,7 +3611,6 @@ table.radio {margin:0; display:table}
 }
 
 li .padding {
-	border: 1px solid #ededed;
 	padding: 10px;
 	margin-bottom: 25px;
 }
@@ -3635,7 +3633,7 @@ li .padding:hover {
 
 /* WEBCA */
 .shipping-wrap {
-    background: #474747;
+    background: #666;
     height: 100px;
     line-height: 100px;
 }
@@ -3678,4 +3676,19 @@ li .padding:hover {
 /* remover zoom */
 .zoomContainer {
 	display: none !important; 
+}
+
+
+#body {
+	width: 1220px;
+	margin: auto;
+	background-color: #FFF;
+}
+
+.wishlist {
+	display: none;
+}
+
+.compare {
+	display: none;
 }

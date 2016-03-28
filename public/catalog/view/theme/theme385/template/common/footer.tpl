@@ -7,8 +7,7 @@
         <div class="row">
             <div class="span12">
                 <div class="shipping" style="text-align: center;">
-                    <p><span style="font-weight: bold; margin-right: 20px;">ENTREGA RÁPIDA </span> Aero Portas - lorem ipsum dolor sit amet mauris accumsan vitate odio tellus</p>
-                    <a href="#" class="buttonss">Saiba Mais</a>
+                    <p><span style="font-weight: bold; margin-right: 20px;">ENTREGA RÁPIDA </span>Via Correios ou Mercado Envios - Receba seus produtos de forma rápida e fácil</p>
                 </div>
             </div>
         </div>
@@ -50,25 +49,7 @@
 			<div class="footer_box">
 				<h5>Fale Conosco</h5>
 				<ul class="list-unstyled">
-				<li><a href="#">Loja 1: Av. dos Bandeirantes, 4265/85<br>
-				Aeroporto - São Paulo - SP<br>
-				(11)5096-1803 / 5543-4699</a></li>
-
-				<li><a href="#">Loja 2: Rua do Gasômetro, 360<br>
-				Brás - São Paulo - SP<br>
-				(11)3313-8942 / 3326-7147</a></li>
-
-				<li><a href="#">Loja 3: Av. Salgado Filho, 1772<br>
-				Centro Guarulhos - São Paulo - SP<br>
-				(11)2382-5185 / 2382-5186</a></li>
-
-				<li><a href="#">Loja 4: Rua do Gasômetro, 326<br>
-				Brás - São Paulo - SP<br>
-				(11) 3227-9747</a></li>
-
-				<li><a href="#">Loja 5: Rua do Gasômetro, 218<br>
-				Brás - São Paulo - SP<br>
-				(11)3227-1226 / 3227-1213</a></li>
+				<li><a href="mailto:contato@garciaparts.com.br">contato@garciaparts.com.br</a></li>
 				</ul>
 			</div>
 		</div>
@@ -77,13 +58,17 @@
 			<div class="footer_box">
 				<h5>Formas de Pagamento</h5>
 				<ul class="list-unstyled">
-				<li><a href="http://aeroportas.homolog.lojavirtual.digital/index.php?route=product/manufacturer">Cartões de Crédito</a></li>
-				<li><img src="/image/credito.png"></li>
-				<li><a href="http://aeroportas.homolog.lojavirtual.digital/index.php?route=account/voucher">Cartões de Débito</a></li>
-				<li><img src="/image/debito.png"></li>
-				<li><a href="http://aeroportas.homolog.lojavirtual.digital/index.php?route=affiliate/account">Outros</a></li>
-				<li><img src="/image/boleto.png"></li>
-				</ul>
+				<li style="text-align: center;"><img src="/image/mercadopago2.png" width="175"><img style="margin-left: 30px;" src="/image/pagseguro.png"></li>
+				<li style="text-align: center;"><img src="/image/bandeiras1.jpg" style="margin-top: 15px; width: 300px;"></li></ul>
+
+				<h5 style="margin-top: 30px;">Formas de Envio</h5>
+				<ul class="list-unstyled">
+				<li style="text-align: center;"><img src="/image/correios.png" style="width: 120px;">
+					<img src="/image/jadlog.png" style="width: 120px; margin-left: 15px;">
+					<img src="/image/mercadoenvios.jpg" style="width: 120px; margin-left: 15px;">
+
+					
+				</li></ul>
 			</div>
 		</div>
 
@@ -136,19 +121,24 @@
 		*/ ?>
 	</div>
 	
-	<div class="copyright" style="margin-top: 15px; margin-bottom: 15px;">
-		<div class="container" style="width: 50%; float: left;">
-			<?php echo $powered; ?><!-- [[%FOOTER_LINK]] -->
-		</div> 
-
-		<div class="container" style="width: 50%; float: left; text-align: right;">
-			Certificado: <img src="/image/comodo_secure_76x26_transp.png">
-		</div> 
-	</div>
-
   </div>
 
+  <div class="copyright" style="margin-top: 15px; margin-bottom: 15px;">
+		<div style="color: #333; padding: 25px 10px 20px; margin-top: 30px;">
+			<div class="container" style="width: 50%; float: left;">
+				Garcia Parts e Acessórios Automotivos LTDA - ME © 2016 - CNPJ: 04.994.578/0001-61<br>
+				Rua Oratório, 381 - Santo André - SP
+			</div> 
+
+			<div class="container" style="width: 50%; float: left; text-align: right;">
+				Certificado: <img src="/image/comodo_secure_76x26_transp.png">
+			</div> 
+			&nbsp;
+		</div>
+	</div>
+
 </footer>
+
 <script src="catalog/view/theme/theme504/js/livesearch.js" type="text/javascript"></script>
 
 </div>

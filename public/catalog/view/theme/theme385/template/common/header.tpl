@@ -119,6 +119,16 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 //--></script>
 <?php } ?>
 
+<!--Start of Zopim Live Chat Script-->
+<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+$.src="//v2.zopim.com/?3nSrkF42IS0e2CwDjmzJYvWXZW1QFTkG";z.t=+new Date;$.
+type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+</script>
+<!--End of Zopim Live Chat Script-->
+
 <!-- Facebook Like box -->
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -260,7 +270,7 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 					<?php } ?>
 					<div style="background-color: blue;">
 						<div class="cart-position" style="float: right; width: 50px; position: absolute; right: 0px; top: 55px;">
-							<img src="/image/fone.png" style="width: 35px; margin-top: 3px;">
+							<span style="font-size: 45px;"><i class="fa fa-question-circle"></i></span>
 						</div>
 
 						<div class="cart-position" style="float: right; width: 270px; position: absolute; right: 70px; top: 55px;">

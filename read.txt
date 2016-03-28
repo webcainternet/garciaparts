@@ -1,0 +1,83 @@
+
+Installation instructions
+
+Compatible with OpenCart 1.5.x with Mercado Pago 2.0 with Lightbox
+
+Important:: This module works only with the following currencies::
+
+Real (Brazil) :: Code BRL or BRA
+Pesos (ARGENTINA) :: Code ARS
+
+
+Installlation steps:
+
+1) Unzip this in the root of your store
+2) Go to your store administration, on extensions > payments > Mercado Pago 2.0 > Install
+3) Again in extensions > payments > Mercado Pago 2.0 > Edit - Setup your MercadoPago account
+
+To configure the return url and receive the order status update, 
+go:
+
+Brasil:: https://www.mercadopago.com/mlb/ferramentas/notificacoes
+Argentina :: https://www.mercadopago.com/mla/herramientas/notificaciones
+
+and insert the address as the exemple below:
+
+http//www.your_store_address_root.com/index.php?route=payment/mercadopago2/retorno/
+
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+Instruções de Instalação
+
+Compatível com OpenCart 1.5.x, integração modelo 2.0 do Mercado Pago
+
+Importante:: Para utilização do módulo é necessário que a loja seja em:
+
+Reais - código BRL ou BRA ou REA
+Pesos Argentinos - código ARS
+
+
+1) Descompacte os arquivos Admin e Catalog no arquivo ROOT de instalação de sua loja
+2) Vá na administração da loja vá a Extensions > Mercado Pago Version 2.0 > Install
+3) Novamente em Extensions > Mercado Pago Version 2.0 > clique em Edit e configure os dados de sua conta no MercadoPago
+
+
+Para configurar a url de retorno e receber atualizações automáticas do status do pedido, vá para em:
+
+Brasil:: https://www.mercadopago.com/mlb/ferramentas/notificacoes
+Argentina :: https://www.mercadopago.com/mla/herramientas/notificaciones
+
+e insira o endereço da sua loja como o exemplo abaixo:
+
+http//www.your_store_address_root.com/index.php?route=payment/mercadopago2/retorno/
+
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+Instrucciones de instalación
+
+Compatible con OpenCart 1.5.x, 2.0 modelo de integración de MercadoPago
+
+:: Importante para la utilización del módulo es necesario en la tienda es:
+
+Código de BRL o BRA o REA - Real
+Pesos - código ARS
+
+
+1) Descomprimir los archivos en el catálogo de archivos raíz de su tienda
+2) En administración de su tienda ir a Extensiones> Mercado Pago versíon 2.0 > Instalar
+3) Mas Una vez más en Extensiones> Mercado Pago versíon 2.0> haga clic en Editar y configurar los datos de su cuenta MercadoPago
+
+Para configurar la dirección de retorno y recibir actualizaciones automáticas de estado del pedido, ver:
+
+Brasil:: https://www.mercadopago.com/mlb/ferramentas/notificacoes
+Argentina :: https://www.mercadopago.com/mla/herramientas/notificaciones
+
+y escriba la dirección de su tienda como el ejemplo a abajo:
+
+http//www.your_store_address_root.com/index.php?route=payment/mercadopago2/retorno/
+
+
+
+
