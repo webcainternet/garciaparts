@@ -4,6 +4,9 @@
 	.col-sm-9 {
 		width: 75%;
 	}
+	.col-sm-12 {
+    	color: #444;
+	}
 </style>
 
 <?php echo $column_left; ?>
@@ -98,7 +101,7 @@
 			}
 		?>
 		<li class="col-sm-4 <?php echo $a?>">
-		<div class="padding" style="min-height: 470px;">
+		<div class="padding" style="min-height: 495px;">
 		<?php if ($product['thumb']) { ?>
 		<div class="image"><a href="<?php echo $product['href']; ?>"><img id="img_<?php echo $product['product_id']; ?>" src="<?php echo $product['thumb']; ?>" title="<?php echo $product['name']; ?>" alt="<?php echo $product['name']; ?>" /></a></div>
 	  <?php } ?>
@@ -201,7 +204,7 @@ function display(view) {
 			var image = $(element).find('.image').html();
 			
 			if (image != null) {
-			html += '<div class="padding" style="min-height: 470px;">';
+			html += '<div class="padding" style="min-height: 495px;">';
 				html += '<div class="image">' + image + '</div>';
 			}
 			html += '<div class="left">';
