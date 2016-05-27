@@ -245,7 +245,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 	<div class="container">
 
 		<div class="row">
-			<div class="col-sm-12" style="float: right; top: 30px;">
+			<div class="col-sm-12" style="float: right; top: 30px;z-index: 99;">
 					<?php echo $language; ?>
 					<?php echo $currency; ?>
 					
