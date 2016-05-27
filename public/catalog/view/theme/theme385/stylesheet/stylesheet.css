@@ -905,6 +905,7 @@ header .links a {
 	line-height:18px;
 	vertical-align:top;
 	text-transform:uppercase;
+	font-weight: bold;
 	}
 .toprow .links .login_h a {
 	max-height:18px;
