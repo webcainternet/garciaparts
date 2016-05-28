@@ -7,7 +7,7 @@
 	<?php } ?>
   </div>
   <h1><?php echo $heading_title; ?></h1>
-  <div class="box-container">
+  <div class="box-container" style="display: none;">
 	  <b style=" padding-bottom:7px; display:block;"> <?php echo $text_critea; ?></b>
 	   <div class="content">
 	<div>
@@ -119,7 +119,7 @@
 			}
 		?>
 		<li class="col-sm-4 <?php echo $a?>">
-			<div class="padding">
+			<div class="padding" style="height: 460px;">
 	  <?php if ($product['thumb']) { ?>
 	  <div class="image"><a href="<?php echo $product['href']; ?>"><img id="img_<?php echo $product['product_id']; ?>" src="<?php echo $product['thumb']; ?>" title="<?php echo $product['name']; ?>" alt="<?php echo $product['name']; ?>" /></a></div>
 	  <?php } ?>
@@ -259,7 +259,7 @@ function display(view) {
 			html = '';
 					
 			var image = $(element).find('.image').html();
-			html += '<div class="padding">';
+			html += '<div class="padding" style="height: 460px;">';
 			if (image != null) {
 				html += '<div class="image">' + image + '</div>';
 			}
