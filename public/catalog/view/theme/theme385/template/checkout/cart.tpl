@@ -203,7 +203,46 @@
 	  <?php $count =0; foreach ($totals as $total) { $count +=1; if ($total == end($totals)) {$a='last';} else {$a='';} ?>
 	  <tr class="row-table-<?php echo $count; ?>" style="line-height: 0;">
 		<td class="right cart-total-name <?php echo $a;?>" style="border: 0px; background-color: #f9f9f9; line-height: 0; color: #333;"><b><?php echo $total['title']; ?>:</b></td>
-		<td class="right cart-total1 <?php echo $a;?>" style="border: 0px; background-color: #f9f9f9; line-height: 0; padding-left: 30px;"><?php echo $total['text']; ?></td>
+		<td class="right cart-total1 <?php echo $a;?>" style="border: 0px; background-color: #f9f9f9; line-height: 0; padding-left: 30px;">
+<?php if ($total['title'] == 'Total') {
+
+ $qtd_parcelas = 5;
+ $juros = 0;
+ $moeda_da_loja = 'R$ ';
+ $tipo_de_calculo = 0;
+ $parcela_minima = 5.00;
+
+$preco_numero = str_replace(',','.',str_replace('.','', str_replace($moeda_da_loja,"",strip_tags($total['text']))));
+
+ // Calcula o valor da parcela de acordo com o tipo de calculo utilizado
+ if ($tipo_de_calculo == 0) {
+   $valor_total = ($preco_numero * pow(1+($juros/100), $qtd_parcelas));
+   $max_parcelas = intval($valor_total/$parcela_minima);
+   if ($max_parcelas < $qtd_parcelas) { $qtd_parcelas = $max_parcelas; }
+   $valor_parcela = $valor_total/$qtd_parcelas;
+ }
+ if ($tipo_de_calculo == 1) {
+   $valor_total = ($preco_numero * ($juros/100));
+   $max_parcelas = intval($valor_total/$parcela_minima);
+   if ($max_parcelas < $qtd_parcelas) { $qtd_parcelas = $max_parcelas; }
+   $valor_parcela = $valor_total/(1-(1/(pow(1+($juros/100), $qtd_parcelas))));
+ }
+ 
+ // Exibe as frases de parcelamento
+
+ echo $total['text'] .  ' Ou <span style="font-size: 22px; font-weight: bold; color: #7FCE58;">' . $qtd_parcelas . 'x</span> de <span style="font-size: 22px; font-weight: bold; color: #7FCE58;">' . $moeda_da_loja . number_format($valor_parcela, 2, ',', '.');
+ if ($juros == 0) { echo '</span> s/ juros</div>'; } 
+				} else {
+echo $total['text']; 
+				}
+
+
+		
+
+
+
+
+		?></td>
 	  </tr>
 	  <?php } ?>
 	</table>

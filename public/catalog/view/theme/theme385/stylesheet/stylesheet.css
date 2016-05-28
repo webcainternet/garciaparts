@@ -3052,7 +3052,7 @@ td.quantity>input[type="text"] {
 	}
 table#total  td {
 	background-color:#f9f9f9;
-	padding:20px;
+	padding: 10px 0px 20px 10px;
 	text-transform:uppercase;
 	width:100%
 	}
