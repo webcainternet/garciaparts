@@ -652,7 +652,7 @@ body div.shadow{display:none;}
 	top:38px;
 	background:#fff;
 	z-index:99999;
-	width:257px;
+	width:530px;
 	padding:20px;
 	float:right;
 	box-shadow:0px 5px 13px rgba(0,0,0,0.13);
@@ -707,8 +707,7 @@ header #cart .cart .image {
 	padding-right:15px;
 	}
 .cart tr {
-	padding-bottom:20px;
-	margin-bottom:20px;
+	margin-bottom:5px;
 	display:block;
 	border-bottom:1px solid #e6e6e6;
 }
@@ -770,7 +769,7 @@ header #cart .cart .remove img {
 	float:left;
 }
 header #cart .cart .remove {
-	padding:10px 0
+	padding:5px 0
 	}
 header #cart .cart .remove>span:hover {
 	color:##006089

@@ -6,7 +6,10 @@
 		<b><?php echo $heading_title; ?></b>
 		<span class="sc-button"></span>
 		<span id="cart-total2"><?php echo $text_items2; ?></span>
-		<span id="cart-total"><?php echo $text_items; ?></span>
+
+		<?php $itenssempreco = explode("-", $text_items); ?>
+
+		<span id="cart-total" style="color: #FFF;"><?php echo $itenssempreco[0]; ?></span>
 		<i class="fa fa-caret-down"></i>
 		<span class="clear"></span>
 		</span>
@@ -26,13 +29,13 @@
 	  <table class="cart">
 		<?php $i=0; $products=array_reverse($products);  foreach ($products as $product) {
 			$i++;
-			if ($i>2) break;
+			if ($i>4) break;
 		 ?>
 		<tr>
 		  <td class="image"><?php if ($product['thumb']) { ?>
 			<a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" /></a>
 			<?php } ?></td>
-		  <td class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a>
+		  <td class="name" style="font-size: 12px;"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a>
 			<div>
 			  <?php foreach ($product['option'] as $option) { ?>
 			  - <small><?php echo $option['name']; ?> <?php echo $option['value']; ?></small><br />
@@ -50,7 +53,7 @@
 		<?php foreach ($vouchers as $voucher) { ?>
 		<tr>
 		  <td class="image"></td>
-		  <td class="name"><?php echo $voucher['description']; ?>
+		  <td class="name" style="font-size: 12px;"><?php echo $voucher['description']; ?>
 			<div class="remove"><span alt="<?php echo $button_remove; ?>" title="<?php echo $button_remove; ?>" onclick="(getURLVar('route') == 'checkout/cart' || getURLVar('route') == 'checkout/checkout') ? location = 'index.php?route=checkout/cart&remove=<?php echo $voucher['key']; ?>' : $('#cart').load('index.php?route=module/cart&remove=<?php echo $voucher['key']; ?>' + ' #cart > *');"><i class="fa fa-times-circle" ></i><?php echo $button_remove; ?></span></div>
 			</td>
 		  <!--<td class="quantity">x&nbsp;1</td>-->
