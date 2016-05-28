@@ -1,0 +1,2684 @@
+
+-----
+
+DATE: 2016-05-19
+
+VERSION 4.6.9:
+
+- Fixed bug on simpleaddress page with fields firstname and lastname
+- Change logic of displaying addresses in block of summary info
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+catalog/controller/checkout/simplecheckout_summary.php
+catalog/view/theme/*/template/checkout/simplecheckout_summary.tpl
+system/library/simple/simple.php
+system/library/simple/simpleaddress.php
+
+------------------------------
+
+DATE: 2016-05-11
+
+VERSION 4.6.8:
+
+- Changed logic of getting current theme in Opencart 2.2
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2016-05-05
+
+VERSION 4.6.7:
+
+- Fixed small bugs with opencart 2.2
+- Fixed small bugs in logic of custom fields
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+admin/model/module/simplecustom.php
+catalog/model/tool/simplecustom.php
+catalog/view/javascript/simplecheckout.js
+system/library/simple/language_helper.php
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2016-04-14
+
+VERSION 4.6.6:
+
+- Changed logic of getting current language for opencart 2.2
+- Fixed issues on step mode on latest versions of jquery
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+admin/model/module/simplecustom.php
+catalog/view/javascript/simplecheckout.js
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2016-04-01
+
+VERSION 4.6.5:
+
+- Added checking for non installed shipping and payment modules
+- Added handling of pressing "enter" in login form
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+catalog/view/javascript/simplecheckout.js
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2016-03-31
+
+VERSION 4.6.4:
+
+- Fixed issue with links between shipping and payment when mask is created
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+system/library/simple/simple.php
+system/library/simple/simplecheckout.php
+
+------------------------------
+
+DATE: 2016-03-31
+
+VERSION 4.6.3:
+
+- Changed language folders for opencart 2.2
+- Added mask for shipping methods
+- Fixed small bugs
+- Updated jquery.maskedinput.min.js to 1.4.1
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+catalog/controller/checkout/simplecheckout.php
+catalog/controller/checkout/simplecheckout_cart.php
+catalog/view/javascript/jquery/jquery.maskedinput.min.js
+catalog/view/javascript/simple.js
+catalog/view/javascript/simplecheckout.js
+system/library/simple/simple.php
+system/library/simple/simplecheckout.php
+
+------------------------------
+
+DATE: 2016-03-14
+
+VERSION 4.6.2:
+
+- Fixed bug with initialization of blocks
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+catalog/view/javascript/simplecheckout.js
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2016-03-14
+
+VERSION 4.6.1:
+
+- Fixed small bug on some settings
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+catalog/view/javascript/simple.js
+catalog/view/javascript/simplecheckout.js
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2016-03-03
+
+VERSION 4.6.0:
+
+- Added supporting of opencart 2.2.0
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+admin/view/template/module/simple_page_simplecheckout.tpl
+admin/view/template/module/simple_tab_address_formats.tpl
+admin/view/template/module/simple_tab_fields.tpl
+admin/view/template/module/simple_tab_headers.tpl
+catalog/controller/account/simpleaddress.php
+catalog/controller/account/simpleedit.php
+catalog/controller/account/simpleregister.php
+catalog/controller/checkout/simplecheckout.php
+catalog/controller/checkout/simplecheckout_cart.php
+catalog/controller/checkout/simplecheckout_comment.php
+catalog/controller/checkout/simplecheckout_customer.php
+catalog/controller/checkout/simplecheckout_login.php
+catalog/controller/checkout/simplecheckout_payment.php
+catalog/controller/checkout/simplecheckout_payment_address.php
+catalog/controller/checkout/simplecheckout_shipping.php
+catalog/controller/checkout/simplecheckout_shipping_address.php
+catalog/controller/checkout/simplecheckout_summary.php
+catalog/controller/checkout/simplecheckout_text.php
+catalog/controller/common/simple_connector.php
+catalog/controller/module/simple.php
+catalog/model/tool/simpleapimain.php
+catalog/model/tool/simplecustom.php
+system/library/simple/language_helper.php
+system/library/simple/simple.php
+system/library/simple/simple_controller.php
+system/library/simple/simplecheckout.php
+
+------------------------------
+
+DATE: 2016-02-23
+
+VERSION 4.5.18:
+
+- Fixed bug with expired session
+- Changed logic of syncronization with opencart's custom fields
+- Changed logic of initialization of fields from session
+
+CHANGED FILES:
+
+admin/language/english/module/simple.php
+admin/language/russian/module/simple.php
+admin/model/module/simple.php
+admin/view/javascript/simple.js
+admin/view/template/module/simple.tpl
+admin/view/template/module/simple_tab_fields.tpl
+catalog/controller/checkout/simplecheckout.php
+catalog/model/tool/simplegeo.php
+catalog/view/javascript/simplecheckout.js
+system/library/simple/simple.php
+system/library/simple/simplecheckout.php
+system/library/simple/simpleregister.php
+
+------------------------------
+
+DATE: 2016-02-11
+
+VERSION 4.5.17:
+
+- Fixed bug with vouchers
+
+CHANGED FILES:
+
+catalog/controller/checkout/simplecheckout.php
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2016-02-09
+
+VERSION 4.5.16:
+
+- Fixed small bug in templates for opencart 2.0 with fields types
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+catalog/view/javascript/simple.js
+catalog/view/theme/*/template/common/simple_row_field.tpl
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2016-02-08
+
+VERSION 4.5.15:
+
+- Changed logic of redirecting when a cart becomes empty
+- Changed logic of working the module as module on other pages
+- Changed logic of reloading of payment form after changing of order's info
+- Added setting for enabling/disabling of this reloading
+- Fixed styles for opencart 2.x for some bootstrap themes
+- Fixed templates for fields fot 2.x, added supporting of bootstrap datetimepicker
+- Added plus/minus to a cart's template for opencart 2.x
+- Changed ocmod for custom fields for opencart 2.x
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+admin/view/javascript/simple.js
+admin/view/template/module/simple_page_simplecheckout.tpl
+catalog/controller/checkout/simplecheckout.php
+catalog/controller/checkout/simplecheckout_cart.php
+catalog/view/javascript/simple.js
+catalog/view/javascript/simplecheckout.js
+catalog/view/theme/*/template/checkout/simplecheckout.tpl
+catalog/view/theme/*/template/module/simple.tpl
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2016-02-03
+
+VERSION 4.5.14:
+
+- Fixed bug with passing of filter values to API method from child blocks
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2016-02-01
+
+VERSION 4.5.13:
+
+- Fixed bug with fields of type "file"
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2016-01-30
+
+VERSION 4.5.12:
+
+- Fixed small bugs
+- Fixed error 502 on nginx with logged customers
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+catalog/view/javascript/simplecheckout.js
+system/library/simple/simple.php
+system/library/simple/simplecheckout.php
+
+------------------------------
+
+DATE: 2016-01-26
+
+VERSION 4.5.11:
+
+- Fixed styles of .simplecheckout-table-form for opencart 1.5.x (for one column layout)
+- Fixed compatibility with internal mini modules for this module
+- Fixed saving of comment
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+catalog/view/theme/default/stylesheet/simple.css
+system/library/simple/simple.php
+system/library/simple/simplecheckout.php
+
+------------------------------
+
+DATE: 2016-01-21
+
+VERSION 4.5.10:
+
+- Fixed small bugs
+- Fixed saving of custom fields to comment of order
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+catalog/controller/checkout/simplecheckout_summary.php
+catalog/view/javascript/simplecheckout.js
+system/library/simple/simple.php
+system/library/simple/simplecheckout.php
+
+------------------------------
+
+DATE: 2016-01-07
+
+VERSION 4.5.9:
+
+- Fixed small bug with masks
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+system/library/simple/simple.php
+
+------------------------------
+
+
+DATE: 2015-12-27
+
+VERSION 4.5.8.1:
+
+- Fixed small bug with masks
+
+CHANGED FILES:
+
+catalog/view/javascript/simplecheckout.js
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2015-12-24
+
+VERSION 4.5.8:
+
+- Fixed small bugs
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+catalog/controller/common/simple_connector.php
+catalog/controller/account/simpleaddress.php
+catalog/controller/account/simpleedit.php
+catalog/controller/account/simpleregister.php
+catalog/controller/checkout/simplecheckout.php
+catalog/controller/module/simple.php
+catalog/view/javascript/simple.js
+catalog/view/theme/*/template/checkout/simplecheckout_empty.tpl
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2015-12-23
+
+VERSION 4.5.7:
+
+- Fixed small bugs
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+catalog/controller/common/simple_connector.php
+catalog/model/tool/simpleapimain.php
+catalog/view/javascript/simple.js
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2015-12-23
+
+VERSION 4.5.7:
+
+- Fixed small bugs
+
+CHANGED FILES:
+
+catalog/view/javascript/simplecheckout.js
+upload/catalog/view/theme/*/template/checkout/simplecheckout_comment.tpl
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2015-12-22
+
+VERSION 4.5.6:
+
+- Fixed small bugs
+
+CHANGED FILES:
+
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2015-12-21
+
+VERSION 4.5.5:
+
+- Fixed small bugs
+
+CHANGED FILES:
+
+catalog/controller/checkout/simplecheckout_text.php
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2015-12-16
+
+VERSION 4.5.4:
+
+- Fixed small bugs
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+catalog/controller/account/simpleregister.php
+catalog/controller/checkout/simplecheckout.php
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2015-12-15
+
+VERSION 4.5.3:
+
+- Fixed small bugs
+
+CHANGED FILES:
+
+catalog/controller/checkout/simplecheckout.php
+catalog/controller/checkout/simplecheckout_customer.php
+system/library/simple/simple.php
+system/library/simple/simplecheckout.php
+
+------------------------------
+
+DATE: 2015-12-13
+
+VERSION 4.5.2:
+
+- Fixed small bugs
+
+CHANGED FILES:
+
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2015-12-13
+
+VERSION 4.5.1:
+
+- Fixed small bug
+
+CHANGED FILES:
+
+catalog/controller/account/simpleaddress.php
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2015-12-12
+
+VERSION 4.5.0:
+
+- Changed logic of fields
+- Changed logic of reloading blocks
+- Changed logic of reloading of payment form after changes in order's info
+- Fixed some bugs
+
+CHANGED FILES:
+
+All files
+
+------------------------------
+
+DATE: 2015-11-10
+
+VERSION 4.4.4:
+
+- Fixed some bugs with custom fields and javascripts
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+catalog/controller/common/simple_connector.php
+catalog/controller/account/simpleaddress.php
+catalog/controller/account/simpleedit.php
+catalog/controller/account/simpleregister.php
+catalog/controller/checkout/simplecheckout.php
+catalog/controller/checkout/simplecheckout_shipping_address.php
+catalog/controller/checkout/simplecheckout_payment_address.php
+catalog/view/javascript/simplecheckout.js
+system/library/simple/simple.php
+system/library/simple/simpleaddress.php
+system/library/simple/simplecheckout.php
+system/library/simple/simpleedit.php
+system/library/simple/simpleregister.php
+
+------------------------------
+
+DATE: 2015-10-25
+
+VERSION 4.4.3:
+
+- Fixed bug with block 'shipping' in admin panel
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2015-10-16
+
+VERSION 4.4.2:
+
+- Fixed bug with cart for opencart 2.1.0
+
+CHANGED FILES:
+
+catalog/controller/checkout/simplecheckout.php
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2015-10-10
+
+VERSION 4.4.1:
+
+- Fixed bug with cart for opencart 2.1.0
+
+CHANGED FILES:
+
+catalog/controller/checkout/simplecheckout_cart.php
+catalog/view/theme/*/template/checkout/simplecheckout_cart.tpl
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2015-10-03
+
+VERSION 4.4.0:
+
+- Added supporting of opencart 2.1.0
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+admin/model/module/simple.php
+admin/view/template/module/simple_tab_integration.tpl
+catalog/controller/account/simple*.php
+catalog/controller/checkout/simple*.php
+catalog/controller/module/simple.php
+catalog/model/tool/simpleapimain.php
+system/library/simple/simple.php
+system/library/simple/simple_controller.php
+system/library/simple/simplecheckout.php
+
+------------------------------
+
+DATE: 2015-09-16
+
+VERSION 4.3.24:
+
+- Fixed some bugs
+
+CHANGED FILES:
+
+catalog/controller/checkout/simplecheckout.php
+catalog/view/javascript/simplecheckout.js
+catalog/view/theme/*/template/checkout/simplecheckout.tpl
+system/library/simple/simple.php
+system/library/simple/simplecheckout.php
+
+------------------------------
+
+DATE: 2015-08-31
+
+VERSION 4.3.23:
+
+- Fixed some bugs
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2015-07-22
+
+VERSION 4.3.22:
+
+- Fixed some bugs
+- Changed styles and templates for opencart 2.0
+
+CHANGED FILES:
+
+catalog/controller/account/simpleaddress.php
+catalog/controller/account/simpleedit.php
+catalog/controller/account/simpleregister.php
+catalog/controller/checkout/simplecheckout_cart.php
+catalog/view/javascript/simplecheckout.js
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2015-06-24
+
+VERSION 4.3.21:
+
+- Fixed some bugs
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+catalog/view/javascript/simple.js
+catalog/view/javascript/simplecheckout.js
+catalog/view/javascript/simplepage.js
+catalog/view/theme/*/template/account/simpleedit.tpl
+catalog/view/theme/*/template/account/simpleregister.tpl
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2015-06-06
+
+VERSION 4.3.20:
+
+- Fixed bug for 2.0.3
+
+CHANGED FILES:
+
+system/library/simple/simple.php
+system/library/simple/simplecheckout.php
+
+------------------------------
+
+DATE: 2015-04-27
+
+VERSION 4.3.19:
+
+- Fixed some bugs
+
+CHANGED FILES:
+
+catalog/controller/checkout/simplecheckout_cart.php
+catalog/controller/checkout/simplecheckout_payment.php
+catalog/controller/checkout/simplecheckout_summary.php
+catalog/controller/common/simple_connector.php
+catalog/view/javascript/simple.js
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2015-04-12
+
+VERSION 4.3.18:
+
+- Added creating of opencart's custom fields and saving of the module's custom fields to opencart's custom fieds
+- Fixed some bugs
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+admin/model/module/simple.php
+admin/view/javascript/simple.js
+admin/view/template/module/simple_page_simplecheckout.tpl
+admin/view/template/module/simple_tab_fields.tpl
+admin/view/template/module/simple_tab_integration.tpl
+catalog/controller/account/simpleregister.php
+catalog/controller/checkout/simplecheckout.php
+catalog/view/javascript/simplecheckout.js
+catalog/view/javascript/simplepage.js
+system/library/simple/simple.php
+system/library/simple/simpleaddress.php
+system/library/simple/simplecheckout.php
+system/library/simple/simpleedit.php
+
+------------------------------
+
+DATE: 2015-04-08
+
+VERSION 4.3.17:
+
+- Fixed some bugs
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+admin/model/module/simple.php
+admin/view/javascript/simple.js
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2015-04-01
+
+VERSION 4.3.16:
+
+- Small changes for opencart 2.0.2
+
+CHANGED FILES:
+
+catalog/controller/account/simpleregister.php
+catalog/controller/checkout/simplecheckout_login.php
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2015-03-25
+
+VERSION 4.3.15:
+
+- Fixed bug with "display for selected"
+- Changed code for compatibility with "geoip" module
+
+CHANGED FILES:
+
+admin/view/javascript/angular.min.js
+catalog/model/tool/simplegeo.php
+system/library/simple/simple.php
+system/library/simple/simplecheckout.php
+
+------------------------------
+
+DATE: 2015-03-20
+
+VERSION 4.3.14:
+
+- Fixed bug with multistore
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+admin/view/template/module/simple.tpl
+admin/view/javascript/simple.js
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2015-03-16
+
+VERSION 4.3.13:
+
+- Fixed some small bugs
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+admin/view/template/module/simple.tpl
+catalog/view/javascript/simplecheckout.js
+catalog/view/theme/*/template/checkout/simplecheckout.tpl
+system/library/simple/language_helper.php
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2015-01-20
+
+VERSION 4.3.12:
+
+- Fixed a bug "at line 1351"
+
+CHANGED FILES:
+
+system/library/simple/simple.php
+system/library/simple/simplecheckout.php
+
+------------------------------
+
+DATE: 2015-01-12
+
+VERSION 4.3.11:
+
+- Fixed some small bugs
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+catalog/controller/checkout/simplecheckout.php
+catalog/controller/checkout/simplecheckout_shipping.php
+catalog/view/javascript/simplecheckout.js
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2014-12-22
+
+VERSION 4.3.10:
+
+- Fixed some bugs
+
+CHANGED FILES:
+
+admin/view/javascript/simple.js
+admin/view/template/module/simple_angular_templates.tpl
+admin/view/template/module/simple_page_simplecheckout.tpl
+catalog/controller/checkout/simplecheckout.php
+catalog/controller/checkout/simplecheckout_shipping.php
+catalog/view/javascript/simplecheckout.js
+system/library/simple/simple.php
+system/library/simple/simplecheckout.php
+
+------------------------------
+
+DATE: 2014-12-09
+
+VERSION 4.3.9:
+
+- Fixed a bug with hidden steps
+- Added supporting of opencart 2.0.1.1
+
+CHANGED FILES:
+
+system/library/simple/simple.php
+system/library/simple/simplecheckout.php
+
+------------------------------
+
+DATE: 2014-12-04
+
+VERSION 4.3.8:
+
+- Added compatibility with Opencart 2.0.1
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+admin/view/template/module/simple_page_simplecheckout.tpl
+catalog/controller/account/simpleregister.php
+catalog/controller/checkout/simplecheckout_login.php
+catalog/controller/checkout/simplecheckout_payment.php
+catalog/view/javascript/simplecheckout.js
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2014-11-27
+
+VERSION 4.3.7:
+
+- Added feature for adding settings for all variants of shipping module
+- Added settings for displaying of shipping and payment modules for guests or logged customers
+- Changed logic of javascripts
+- Fixed some bugs
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+admin/model/module/simple.php
+admin/model/module/simplecustom.php
+admin/view/javascript/simple.js
+admin/view/template/module/simple_angular_templates.tpl
+admin/view/template/module/simple_page_simplecheckout.tpl
+catalog/controller/checkout/simplecheckout.php
+catalog/model/tool/simplecustom.php
+catalog/view/javascript/simple.js
+catalog/view/javascript/simplecheckout.js
+catalog/view/javascript/simplepage.js
+catalog/view/theme/*/template/account/simpleaddress.tpl
+catalog/view/theme/*/template/account/simpleedit.tpl
+catalog/view/theme/*/template/account/simpleregister.tpl
+catalog/view/theme/*/template/checkout/simplecheckout.tpl
+system/library/simple/simple.php
+system/library/simple/simplecheckout.php
+
+------------------------------
+
+DATE: 2014-11-06
+
+VERSION 4.3.6:
+
+- Fixed some bugs
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2014-11-05
+
+VERSION 4.3.5:
+
+- Fixed some bugs
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+catalog/view/javascript/simple.js
+catalog/view/javascript/simplecheckout.js
+catalog/view/javascript/simplepage.js
+catalog/view/theme/*/template/account/simpleaddress.tpl
+catalog/view/theme/*/template/account/simpleedit.tpl
+catalog/view/theme/*/template/account/simpleregister.tpl
+catalog/view/theme/*/template/checkout/simplecheckout.tpl
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2014-10-31
+
+VERSION 4.3.4:
+
+- Added buttons for adding and removing of the options
+- Added setting for combining of customer and address blocks
+- Fixed bug with hidden steps
+- Fixed bug with a block "cart"
+- Fixed logic of getting of delivery options
+- Fixed logic of saving of custom fields of an object "address" when one of addresses is hidden
+- Fixed some bugs with opencart 2.0
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+admin/view/javascript/simple.js
+admin/view/template/module/simple.tpl
+admin/view/template/module/simple_angular_templates.tpl
+admin/view/template/module/simple_page_simplecheckout.tpl
+catalog/controller/account/simpleregister.php
+catalog/controller/checkout/simplecheckout.php
+catalog/controller/checkout/simplecheckout_summary.php
+catalog/view/javascript/simplecheckout.js
+catalog/view/theme/*/template/checkout/simplecheckout.tpl
+system/library/simple/simple.php
+system/library/simple/simple_controller.php
+system/library/simple/simplecheckout.php
+system/library/simple/simpleregister.php
+vqmod/xml/simple_custom_data_catalog.xml
+
+------------------------------
+
+DATE: 2014-10-15
+
+VERSION 4.3.3:
+
+- Fixed bug with child controllers
+
+CHANGED FILES:
+
+system/library/simple/simple.php
+system/library/simple/simple_controller.php
+
+------------------------------
+
+VERSION 4.3.2:
+
+- Changed logic of work with child controllers
+
+CHANGED FILES:
+
+catalog/controller/checkout/simple_*.php
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2014-10-12
+
+VERSION 4.3.1:
+
+- Fixed bug with mbstring
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2014-10-11
+
+VERSION 4.3.0:
+
+- Changed logic of work with guest session
+- Added hiding of step when all blocks on the step are hidden
+- Added saving of guest info in cookies
+- Added selection of displaying type of payment and shipping methods
+- Fixed bugs
+- Added supporting of opencart v 2.0
+
+CHANGED FILES:
+
+all files
+
+------------------------------
+
+DATE: 2014-09-12
+
+VERSION 4.2.5:
+
+- Fixed some bugs
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+admin/view/javascript/simple.js
+admin/view/template/module/simple_angular_templates.tpl
+admin/view/template/module/simple_tab_fields.tpl
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2014-09-11
+
+VERSION 4.2.4:
+
+- Fixed some bugs
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+system/library/simple/simple.php
+system/library/simple/simplecheckout.php
+
+------------------------------
+
+DATE: 2014-09-02
+
+VERSION 4.2.3:
+
+- Fixed some bugs
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+admin/view/javascript/simple.js
+admin/view/template/module/simple_angular_templates.tpl
+system/library/simple/simple.php
+system/library/simple/simplecheckout.php
+
+------------------------------
+
+DATE: 2014-07-30
+
+VERSION 4.2.2:
+
+- Fixed some bugs
+
+CHANGED FILES:
+
+admin/model/module/simplecustom.php
+catalog/model/tool/simplecustom.php
+catalog/view/javascript/simplecheckout.js
+system/library/simple/simple.php
+system/library/simple/simplecheckout.php
+
+------------------------------
+
+DATE: 2014-07-18
+
+VERSION 4.2.1:
+
+- Fixed bug with zones when shipping and payment addresses are differents
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+admin/model/module/simplecustom.php
+admin/view/javascript/angular.min.js
+admin/view/javascript/simple.js
+admin/view/javascript/simple-language.js
+admin/view/template/module/simple.tpl
+admin/view/template/module/simple_angular_templates.tpl
+catalog/controller/account/simpleedit.php
+catalog/controller/checkout/simplecheckout_summary.php
+catalog/model/tool/simplecustom.php
+catalog/view/javascript/simplecheckout.js
+catalog/view/javascript/simplepage.js
+catalog/view/theme/*/template/checkout/simplecheckout_payment.tpl
+catalog/view/theme/*/template/checkout/simplecheckout_shipping.tpl
+system/library/simple/simple.php
+system/library/simple/simpleedit.php
+vqmod/xml/simple_custom_data_admin.xml
+vqmod/xml/simple_custom_data_catalog.xml
+
+------------------------------
+
+DATE: 2014-07-15
+
+VERSION 4.2.0:
+
+- Added settings for address formats
+- Fixed some bugs
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+admin/model/module/simplecustom.php
+admin/view/javascript/angular.min.js
+admin/view/javascript/simple.js
+admin/view/javascript/simple-language.js
+admin/view/template/module/simple.tpl
+admin/view/template/module/simple_angular_templates.tpl
+catalog/controller/account/simpleedit.php
+catalog/controller/checkout/simplecheckout_summary.php
+catalog/model/tool/simplecustom.php
+catalog/view/javascript/simplecheckout.js
+catalog/view/javascript/simplepage.js
+catalog/view/theme/*/template/checkout/simplecheckout_payment.tpl
+catalog/view/theme/*/template/checkout/simplecheckout_shipping.tpl
+system/library/simple/simple.php
+system/library/simple/simpleedit.php
+vqmod/xml/simple_custom_data_admin.xml
+vqmod/xml/simple_custom_data_catalog.xml
+
+------------------------------
+
+DATE: 2014-06-14
+
+VERSION 4.1.8:
+
+- Fixed some bugs in javascripts
+
+CHANGED FILES:
+
+catalog/controller/checkout/simplecheckout_customer.php
+catalog/controller/checkout/simplecheckout_payment_address.php
+catalog/controller/checkout/simplecheckout_shipping_address.php
+catalog/view/javascript/simple.js
+catalog/view/javascript/simplecheckout.js
+catalog/view/javascript/simplepage.js
+catalog/view/theme/*/template/account/simpleaddress.tpl
+catalog/view/theme/*/template/account/simpleedit.tpl
+catalog/view/theme/*/template/account/simpleregister.tpl
+catalog/view/theme/*/template/checkout/simplecheckout.tpl
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2014-06-14
+
+VERSION 4.1.7:
+
+- Fixed some bugs in javascripts
+- Fixed some bugs for Joomla
+- Fixed some bugs with custom fields
+
+CHANGED FILES:
+
+admin/model/module/simplecustom.php
+admin/view/javascript/simple.js
+admin/view/template/module/simple_tab_backup.tpl
+catalog/view/javascript/simplecheckout.js
+system/library/simple/simple.php
+vqmod/xml/simple_custom_data_admin.xml
+vqmod/xml/simple_custom_data_catalog.xml
+
+------------------------------
+
+DATE: 2014-06-02
+
+VERSION 4.1.6:
+
+- Fixed some bugs with custom fields
+- Fixed bug with "loading" image
+- Fixed bug with displaying of custom fields in admin panel
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+admin/view/template/module/simple_tab_fields.tpl
+catalog/controller/checkout/simplecheckout_payment.php
+catalog/view/javascript/simplecheckout.js
+system/library/simple/simple.php
+system/library/simple/simplecheckout.php
+
+------------------------------
+
+DATE: 2014-05-27
+
+VERSION 4.1.5:
+
+- Fixed bug with filter value for API methods
+- Added exporting of payment methods
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+admin/view/template/module/simple_tab_fields.tpl
+catalog/controller/checkout/simplecheckout_payment.php
+catalog/view/javascript/simplecheckout.js
+system/library/simple/simple.php
+system/library/simple/simplecheckout.php
+
+------------------------------
+
+DATE: 2014-05-22
+
+VERSION 4.1.4:
+
+- Fixed some bugs with hidden blocks
+- Added scrolling to step menu
+
+CHANGED FILES:
+
+catalog/controller/checkout/simplecheckout.php
+catalog/controller/checkout/simplecheckout_customer.php
+catalog/controller/checkout/simplecheckout_payment_address.php
+catalog/controller/checkout/simplecheckout_shipping_address.php
+catalog/view/javascript/simplecheckout.js
+catalog/view/javascript/simplepage.js
+system/library/simple/simple.php
+system/library/simple/simplecheckout.php
+
+------------------------------
+
+DATE: 2014-05-18
+
+VERSION 4.1.3:
+
+- Fixed some bugs
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+admin/view/template/module/simple.tpl
+catalog/view/theme/*/template/common/simple_row_field.tpl
+catalog/model/tool/simplecustom.php
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2014-05-14
+
+VERSION 4.1.2:
+
+- Fixed some bugs
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+admin/view/template/module/simple.tpl
+catalog/model/tool/simplecustom.php
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2014-05-04
+
+VERSION 4.1.1:
+
+- Changed logic of validation rules on javascript (client side validation)
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+admin/view/template/module/simple.tpl
+catalog/view/theme/*/template/common/simple_row_field.tpl
+catalog/view/javascript/simplecheckout.js
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2014-04-23
+
+VERSION 4.1.0:
+
+- Added a setting for hiding of a block "delivery address" for needed delivery methods
+- Added a setting for hiding of a block "billing address" for needed payment methods
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+admin/view/template/module/simple_page_simplecheckout.tpl
+catalog/controller/checkout/simplecheckout.php
+system/library/simple/simple.php
+system/library/simple/simplecheckout.php
+
+------------------------------
+
+
+DATE: 2014-04-21
+
+VERSION 4.0.9:
+
+- Fixed bug with master field for a header
+- Fixed a logic of loadng modules on the simplecheckout page
+
+CHANGED FILES:
+
+admin/view/template/module/simple_angular_templates.tpl
+catalog/controller/checkout/simplecheckout.php
+catalog/view/theme/*/template/checkout/simplecheckout.tpl
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2014-04-17
+
+VERSION 4.0.8:
+
+- Fixed bugs
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+admin/model/module/simplecustom.php
+system/library/simple/simple.php
+system/library/simple/simplecheckout.php
+
+------------------------------
+
+DATE: 2014-04-12
+
+VERSION 4.0.7:
+
+- Fixed bugs
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+catalog/controller/checkout/simplecheckout.php
+catalog/view/javascript/simplecheckout.js
+catalog/view/theme/*/template/checkout/simplecheckout.tpl
+system/library/simple/simple.php
+system/library/simple/simplecheckout.php
+
+------------------------------
+
+DATE: 2014-04-12
+
+VERSION 4.0.6:
+
+- Fixed bug with master value
+- Fixed bug with payment address
+- Fixed small bugs in javascripts
+
+CHANGED FILES:
+
+catalog/controller/checkout/simplecheckout.php
+catalog/view/javascript/simplecheckout.js
+catalog/view/theme/*/template/checkout/simplecheckout.tpl
+system/library/simple/simple.php
+system/library/simple/simplecheckout.php
+
+------------------------------
+
+DATE: 2014-04-07
+
+VERSION 4.0.5:
+
+- Fixed bugs with {payment_simple} block
+- Fixed small bugs in javascripts
+
+CHANGED FILES:
+
+catalog/controller/checkout/simplecheckout.php
+catalog/view/javascript/simplecheckout.js
+catalog/view/theme/*/template/checkout/simplecheckout.tpl
+system/library/simple/simple.php
+system/library/simple/simpleaddress.php
+system/library/simple/simpleedit.php
+system/library/simple/simplecheckout.php
+system/library/simple/simpleregister.php
+
+------------------------------
+
+
+DATE: 2014-04-01
+
+VERSION 4.0.4:
+
+- Fixed bugs
+
+CHANGED FILES:
+
+catalog/view/javascript/simplecheckout.js
+catalog/view/theme/*/template/checkout/simplecheckout.tpl
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2014-03-31
+
+VERSION 4.0.3:
+
+- Fixed bugs
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+admin/view/template/module/simple_angular_templates.tpl
+admin/view/template/module/simple_custom.tpl
+admin/view/template/module/simple_page_simplecheckout.tpl
+catalog/controller/account/simpleedit.php
+catalog/controller/account/simpleaddress.php
+catalog/controller/account/simpleregister.php
+catalog/controller/checkout/simplecheckout.php
+catalog/controller/checkout/simplecheckout_customer.php
+catalog/view/javascript/simple.js
+catalog/view/javascript/simplecheckout.js
+catalog/model/tool/simpleapimain.php
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2014-03-28
+
+VERSION 4.0.2:
+
+- Fixed bugs
+
+CHANGED FILES:
+
+catalog/controller/account/simpleedit.php
+catalog/controller/account/simpleaddress.php
+catalog/controller/account/simpleregister.php
+catalog/view/javascript/simple.js
+system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2014-03-28
+
+VERSION 4.0.1:
+
+- Fixed bugs
+
+CHANGED FILES:
+
+admin/controller/module/simple.php
+catalog/controller/account/simpleedit.php
+catalog/controller/account/simpleaddress.php
+catalog/controller/account/simpleregister.php
+catalog/controller/checkout/simplecheckout.php
+catalog/model/tool/simpleapimain.php
+catalog/view/javascript/simple.js
+catalog/view/javascript/simplecheckout.js
+catalog/view/theme/*/template/checkout/simplecheckout.tpl
+system/library/simple/*
+
+------------------------------
+
+DATE: 2014-03-23
+
+VERSION 4.0.0:
+
+Please visit demo store http://demo1.simpleopencart.com
+
+CHANGED FILES:
+
+All
+
+------------------------------
+
+DATE: 2014-10-01
+
+For updating you may upload only files from the "Changed Files", reinstalling not required.
+Or you can use files from incremental update.
+
+VERSION 3.8.3:
+
+- Added displaying of comment, payment and shipping address on last step (summary info)
+- Fixed bug with min/max values for vouchers
+- Fixed bug with button 'back'
+- Fixed bug with syntax error in admin's javascripts in some languages
+
+CHANGED FILES:
+
+/upload/admin/controller/module/simple.php
+/upload/admin/view/template/module/simple.tpl
+/upload/catalog/controller/checkout/simplecheckout.php
+/upload/catalog/controller/checkout/simplecheckout_cart.php
+/upload/catalog/view/theme/*/template/common/simple_static.tpl
+/upload/catalog/view/theme/*/template/checkout/simplecheckout.tpl
+/upload/catalog/view/theme/*/template/checkout/simplecheckout_cart.tpl
+/upload/catalog/view/javascript/simplecheckout.js
+/upload/system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2013-09-24
+
+For updating you may upload only files from the "Changed Files", reinstalling not required.
+Or you can use files from incremental update.
+
+VERSION 3.8.2:
+
+- Fixed bug in simple_total module (this is additional module for the Simple, but not needed)
+- Fixed small bug with session info in some cases
+
+CHANGED FILES:
+
+/upload/catalog/controller/checkout/simplecheckout_customer.php
+/upload/system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2013-09-08
+
+For updating you may upload only files from the "Changed Files", reinstalling not required.
+Or you can use files from incremental update.
+
+VERSION 3.8.1:
+
+- Fixed behaviour after popup login in 'step by step' mode
+
+CHANGED FILES:
+
+/upload/catalog/controller/checkout/simplecheckout.php
+/upload/catalog/controller/checkout/simplecheckout_customer.php
+/upload/catalog/view/javascript/simplecheckout.js
+/upload/system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2013-09-04
+
+For updating you may upload only files from the "Changed Files", reinstalling not required.
+Or you can use files from incremental update.
+
+VERSION 3.8.0:
+
+- Added two ways for setting of links between shipping and payment modules: when payment options depend on shipping option and otherwise when payment options depend on shipping options.
+- Added new settings for jquery date (now you may set day of week for selecting)
+- Setting 'hide if logged' for customer's block is splitted on two same options: the first only is for customer's block and the second is only for 'shipping address' block
+- Added small 'order total' module for changing of order total depending of custom field of the module
+
+CHANGED FILES:
+
+/upload/admin/controller/module/simple.tpl
+/upload/admin/view/template/module/simple.tpl
+/upload/catalog/controller/checkout/simplecheckout.php
+/upload/catalog/controller/checkout/simplecheckout_customer.php
+/upload/catalog/view/theme/*/template/checkout/simplecheckout_customer.tpl
+/upload/catalog/view/javascript/simple.js
+/upload/system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2013-07-30
+
+For updating you may upload only files from the "Changed Files", reinstalling not required.
+Or you can use files from incremental update.
+
+VERSION 3.7.0:
+
+- Added supporting 1.5.6
+- Fixed small bugs
+
+CHANGED FILES:
+
+/upload/catalog/controller/checkout/simplecheckout.php
+/upload/catalog/controller/checkout/simplecheckout_cart.php
+/upload/catalog/controller/checkout/simplecheckout_customer.php
+/upload/catalog/view/javascript/simplecheckout.js
+/upload/system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2013-07-22
+
+For updating you may upload only files from the "Changed Files", reinstalling not required.
+Or you can use files from incremental update.
+
+VERSION 3.6.2:
+
+- Fixed bug with steps in IE8
+
+CHANGED FILES:
+
+/upload/catalog/view/javascript/simple.js
+/upload/catalog/view/javascript/simplecheckout.js
+
+------------------------------
+
+DATE: 2013-07-18
+
+For updating you may upload only files from the "Changed Files", reinstalling not required.
+Or you can use files from incremental update.
+
+VERSION 3.6.1.1:
+
+- Fixed small bug with set of fields for submethods of shipping modules
+
+CHANGED FILES:
+
+/upload/system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2013-07-09
+
+For updating you may upload only files from the "Changed Files", reinstalling not required.
+Or you can use files from incremental update.
+
+VERSION 3.6.1:
+
+- Fixed small bug with country/zone selector (added since 3.6.0)
+
+CHANGED FILES:
+
+/upload/system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2013-07-01
+
+For updating you may upload only files from the "Changed Files", reinstalling not required.
+Or you can use files from incremental update.
+
+VERSION 3.6.0:
+
+- Added selector for displaying of country/zone fields when they are hided
+- Added new controller and javascripts for loading each block separately
+- Fixed some small bugs
+
+CHANGED FILES:
+
+/upload/admin/controller/module/simple.php
+/upload/admin/view/template/module/simple.tpl
+/upload/catalog/controller/checkout/simplecheckout.php
+/upload/catalog/controller/checkout/simplecheckout_customer.php
+/upload/catalog/view/theme/*/template/checkout/simplecheckout_customer.tpl
+/upload/catalog/view/javascript/simplecheckout.js
+/upload/system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2013-06-10
+
+For updating you may upload only files from the "Changed Files", reinstalling not required.
+Or you can use files from incremental update.
+
+VERSION 3.5.9:
+
+- Added editing of custom fields in admin panel
+- Added new model and methods for easy retrieving of custom fields's values in any place
+- Added examples of vqmods for retrieving of custom fields
+- Added some usefull vqmods
+
+CHANGED FILES:
+
+/upload/admin/controller/module/simple.php
+/upload/admin/model/tool/simplecustom.php
+/upload/admin/view/template/module/simple_custom.tpl
+/upload/catalog/controller/checkout/simplecheckout.php
+/upload/catalog/model/tool/simpledata.php
+/upload/system/library/simple/simple.php
+vqmod/xml/simple_custom_data.xml
+
+ADDED FILES:
+
+/upload/catalog/model/tool/simplecustom.php
+
+------------------------------
+
+DATE: 2013-05-31
+
+For updating you may upload only files from the "Changed Files", reinstalling not required.
+Or you can use files from incremental update.
+
+VERSION 3.5.8.1:
+
+- Fix for placeholders
+
+CHANGED FILES:
+
+/upload/system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2013-05-30
+
+For updating you may upload only files from the "Changed Files", reinstalling not required.
+Or you can use files from incremental update.
+
+VERSION 3.5.8:
+
+- Fixed bug with init value of 'subscribe' radio for some settings
+- Changed javascripts
+- Changed logic of including of static files
+- Added setting for minify
+
+CHANGED FILES:
+
+/upload/admin/controller/module/simple.php
+/upload/admin/view/template/module/simple.tpl
+/upload/catalog/controller/checkout/simplecheckout_customer.php
+/upload/catalog/view/javascript/simplecheckout.js
+/upload/system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2013-05-14
+
+For updating you may upload only files from the "Changed Files", reinstalling not required.
+Or you can use files from incremental update.
+
+VERSION 3.5.7:
+
+- Added new methods of API for getting of field's status and need of reload after changing.
+For example now any field can be filtered by call of API method (show field for logged users or for guest, show this field if other one is selected, etc)
+- Added checking of leaving of simplecheckout page when an order is not confirmed, in this case an warning is displayed (Opera is not supported)
+- Added fix for existing fields of address table and customer table when these fields are added by vqmods
+
+CHANGED FILES:
+
+/upload/admin/view/template/module/simple.tpl
+/upload/catalog/controller/account/simpleedit.php
+/upload/catalog/controller/account/simpleaddress.php
+/upload/catalog/controller/checkout/simplecheckout.php
+/upload/catalog/controller/checkout/simplecheckout_customer.php
+/upload/catalog/view/theme/*/template/checkout/simplecheckout.tpl
+/upload/catalog/view/javascript/simplecheckout.js
+/upload/system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2013-04-30
+
+For updating you may upload only files from the "Changed Files", reinstalling not required.
+Or you can use files from incremental update.
+
+VERSION 3.5.6:
+
+- Added supporting of special modules for Simple via [[payment_simple]]
+
+CHANGED FILES:
+
+/upload/catalog/controller/checkout/simplecheckout.php
+/upload/system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2013-04-20
+
+For updating you may upload only files from the "Changed Files", reinstalling not required.
+Or you can use files from incremental update.
+
+VERSION 3.5.5:
+
+- Changed logic of including of module in simplecheckout
+
+CHANGED FILES:
+
+/upload/catalog/view/javascript/simplecheckout.js
+/upload/system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2013-04-19
+
+For updating you may upload only files from the "Changed Files", reinstalling not required.
+Or you can use files from incremental update.
+
+VERSION 3.5.4:
+
+- Fixed bug with custom fields of groups which need approval after registration
+
+CHANGED FILES:
+
+/upload/catalog/controller/account/simpleregister.php
+/upload/system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2013-04-02
+
+For updating you may upload only files from the "Changed Files", reinstalling not required.
+Or you can use files from incremental update.
+
+VERSION 3.5.3:
+
+- Fixed bug with checkout_address when 'shipping address' block is disabled
+
+CHANGED FILES:
+
+/upload/catalog/controller/checkout/simplecheckout.php
+/upload/system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2013-04-02
+
+For updating you may upload only files from the "Changed Files", reinstalling not required.
+Or you can use files from incremental update.
+
+VERSION 3.5.2:
+
+- Fixed bug with customer_field_changed() when changed field in payment form
+
+CHANGED FILES:
+
+/upload/catalog/view/javascript/simplecheckout.js
+/upload/system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2013-04-01
+
+For updating you may upload only files from the "Changed Files", reinstalling not required.
+Or you can use files from incremental update.
+
+VERSION 3.5.1:
+
+- Fixed small bug with mask_from_api
+- Updated Italian in languages for admin panel
+
+CHANGED FILES:
+
+/upload/admin/view/template/module/simple.tpl
+/upload/system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2013-03-30
+
+For updating you may upload only files from the "Changed Files", reinstalling not required.
+Or you can use files from incremental update.
+
+VERSION 3.5.0:
+
+- Added mode for checkout step by step (with optional summary step)
+- Added setting for moving comment box in other place (in bottom or after one of blocks)
+- Added setting 'field of linked object' for custom fields (see /howto/readme.txt)
+- Added API for getting value of mask from API of the module (see /catalog/model/tool/simpledata.php)
+
+CHANGED FILES:
+
+All files were changed
+
+------------------------------
+
+DATE: 2013-02-16
+
+For updating you may upload only files from the "Changed Files", reinstalling not required.
+Or you can use files from incremental update.
+
+VERSION 3.4.3.1:
+
+- Fixed bug with adding of static files at page "update address"
+
+CHANGED FILES:
+
+/upload/catalog/controller/account/simpleaddress.php
+/upload/system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2013-02-01
+
+For updating you may upload only files from the "Changed Files", reinstalling not required.
+Or you can use files from incremental update.
+
+VERSION 3.4.3:
+
+- Fixed bug with using total for min/max values
+- Added setting for type of selection of customer group if selection is enabled
+- Added setting for group_id of customer after registration if selection is disabled
+- Added experimental function, now you may include simple modules in layout via [[module_name]]
+
+CHANGED FILES:
+
+/upload/catalog/controller/checkout/simplecheckout_cart.php
+/upload/admin/controller/module/simple.php
+/upload/admin/view/template/module/simple.tpl
+/upload/catalog/controller/account/simpleedit.php
+/upload/catalog/controller/account/simpleregister.php
+/upload/catalog/controller/checkout/simplecheckout.php
+/upload/catalog/controller/checkout/simplecheckout_customer.php
+/upload/catalog/view/theme/*/template/account/simpleedit.tpl
+/upload/catalog/view/theme/*/template/account/simpleregister.tpl
+/upload/catalog/view/theme/*/template/checkout/simplecheckout.tpl
+/upload/catalog/view/theme/*/template/checkout/simplecheckout_customer.tpl
+/upload/system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2013-01-24
+
+For updating you may upload only files from the "Changed Files", reinstalling not required.
+Or you can use files from incremental update.
+
+VERSION 3.4.2:
+
+- Added supporting of opencart version 1.5.5.x
+- Fixed bug with jquery date when date_start is 0
+- Fixed bug with email confirmation for some settings
+- Added experimental feature for moving field for another block from customer block
+
+CHANGED FILES:
+
+/upload/admin/controller/module/simple.php
+/upload/admin/view/template/module/simple.tpl
+/upload/catalog/controller/account/simpleaddress.php
+/upload/catalog/controller/account/simpleedit.php
+/upload/catalog/controller/account/simpleregister.php
+/upload/catalog/controller/checkout/simplecheckout.php
+/upload/catalog/controller/checkout/simplecheckout_customer.php
+/upload/catalog/view/theme/*/template/account/simpleregister.tpl
+/upload/catalog/view/theme/*/template/common/simple_static.tpl
+/upload/catalog/view/theme/*/template/checkout/simplecheckout_customer.tpl
+/upload/catalog/view/javascript/simplecheckout.js
+/upload/system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2013-01-17
+
+For updating you may upload only files from the "Changed Files", reinstalling not required.
+Or you can use files from incremental update.
+
+VERSION 3.4.1:
+
+- Added double checking of email at simplecheckout and simpleregister pages
+DON'T FORGET ADD entry_email_confirm and error_email_confirm IN
+catalog\language\YOUR_LANG\account\simpleregister.php
+catalog\language\YOUR_LANG\checkout\simplecheckout.php
+
+CHANGED FILES:
+
+/upload/admin/controller/module/simple.php
+/upload/admin/view/template/module/simple.tpl
+/upload/catalog/controller/account/simpleregister.php
+/upload/catalog/controller/checkout/simplecheckout_customer.php
+/upload/catalog/view/theme/*/template/account/simpleregister.tpl
+/upload/catalog/view/theme/*/template/checkout/simplecheckout_customer.tpl
+/upload/catalog/view/javascript/simplecheckout.js
+/upload/catalog/view/javascript/simpleregister.js
+/upload/system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2013-01-15
+
+For updating you may upload only files from the "Changed Files", reinstalling not required.
+Or you can use files from incremental update.
+
+VERSION 3.4.0:
+
+- Changed javascript for hiding 'order' button if payment module doesn't have 'confirm button' (for example paypal_advanced in iframe)
+- Added new types 'checkbox_from_api', 'radio_from_api' for fields
+- Added new setting for fields: 'init_from_api', you may add method for retrieving default value for any field via API (simpledata.php)
+- Added displaying of settings for main fields
+- Added settings for checkbox 'address same' (init state and show/don't show)
+
+For example now you may change type for field 'city' (main_city) to 'select_from_api' and add following code in simpledata.php
+
+public function select_main_city($fields) {
+    $values = array();
+
+    $country_id = $fields['main_country_id']['value']; // id of selected country
+    $zone_id = $fields['main_zone_id']['value'];       // id of selected zone
+
+    //echo $country_id.' -> '.$zone_id;
+
+    // list of values for current country_id and zone_id
+    $values[1] = 'Name 1';
+    $values[2] = 'Name 2';
+    $values[3] = 'Name 3';
+    $values[4] = 'Name 4';
+
+    return $values;
+}
+
+CHANGED FILES:
+
+/upload/admin/view/template/module/simple.tpl
+/upload/catalog/controller/checkout/simplecheckout_customer.php
+/upload/catalog/view/theme/*/template/checkout/simplecheckout_customer.tpl
+/upload/catalog/view/javascript/simplecheckout.js
+/upload/system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2012-12-27
+
+For updating you may upload only files from the "Changed Files", reinstalling not required.
+Or you can use files from incremental update.
+
+VERSION 3.3.4:
+
+- Added disabling of links between payment and shipping modules when all goods in the cart not require delivery
+- Changed logic for flag 'prevent_delete'
+
+CHANGED FILES:
+
+/upload/catalog/controller/checkout/simplecheckout.php
+/upload/catalog/controller/checkout/simplecheckout_payment.php
+/upload/system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2012-12-25
+
+For updating you may upload only files from the "Changed Files", reinstalling not required.
+Or you can use files from incremental update.
+
+VERSION 3.3.3:
+
+- Changed logic of custom fields if enabled approvement after registration
+
+CHANGED FILES:
+
+/upload/catalog/controller/account/simpleregister.php
+/upload/catalog/controller/checkout/simplecheckout_shipping.php
+/upload/system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2012-12-24
+
+For updating you may upload only files from the "Changed Files", reinstalling not required.
+Or you can use files from incremental update.
+
+VERSION 3.3.2:
+
+- Changed logic of setting 'only business days' for jquery datepicker
+
+CHANGED FILES:
+
+/upload/catalog/view/javascript/simple.js
+/upload/system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2012-12-20
+
+For updating you may upload only files from the "Changed Files", reinstalling not required.
+Or you can use files from incremental update.
+
+VERSION 3.3.1:
+
+- Added setting for stubs for displaying of description for stub and for option
+- Fixed bug on some enviroments with short tag '<?' in the templates
+- Fixed bug with selectbox for customer groups for logged customer
+
+CHANGED FILES:
+
+/upload/admin/view/template/module/simple.tpl
+/upload/catalog/controller/checkout/simplecheckout_payment.php
+/upload/catalog/controller/checkout/simplecheckout_shipping.php
+/upload/catalog/view/theme/*/template/checkout/simplecheckout_payment.tpl
+/upload/catalog/view/theme/*/template/checkout/simplecheckout_shipping.tpl
+/upload/system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2012-12-18
+
+For updating you may upload only files from the "Changed Files", reinstalling not required.
+Or you can use files from incremental update.
+
+VERSION 3.3.0:
+
+- Added setting for disabling of button 'back'
+- Added new type 'checkbox' for custom fields
+- Added displaying of stubs for payment and shipping options when address is empty
+- Added checking of quantity of product in a cart when a customer clicks on button 'minus' and a product is last in the cart
+
+CHANGED FILES:
+
+/upload/admin/controller/module/simple.php
+/upload/admin/view/template/module/simple.tpl
+/upload/catalog/controller/checkout/simplecheckout.php
+/upload/catalog/controller/checkout/simplecheckout_cart.php
+/upload/catalog/controller/checkout/simplecheckout_payment.php
+/upload/catalog/controller/checkout/simplecheckout_shipping.php
+/upload/catalog/view/javascript/simplecheckout.js
+/upload/catalog/view/theme/*/template/checkout/simplecheckout.tpl
+/upload/catalog/view/theme/*/template/checkout/simplecheckout_cart.tpl
+/upload/catalog/view/theme/*/template/checkout/simplecheckout_payment.tpl
+/upload/catalog/view/theme/*/template/checkout/simplecheckout_shipping.tpl
+/upload/system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2012-12-17
+
+For updating you may upload only files from the "Changed Files", reinstalling not required.
+Or you can use files from incremental update.
+
+VERSION 3.2.4:
+
+- Fixed bug with customer groups when one of them is not in list of displayed groups, and a customer is assigned to this group
+
+CHANGED FILES:
+
+/upload/catalog/controller/checkout/simplecheckout_customer.php
+/upload/system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2012-12-14
+
+For updating you may upload only files from the "Changed Files", reinstalling not required.
+Or you can use files from incremental update.
+
+VERSION 3.2.3:
+
+- Small changes in javascript of admin panel for validation of id of new custom fields
+- Small changes in naming of custom fields for saving in order info
+
+CHANGED FILES:
+
+/upload/admin/view/template/module/simple.tpl
+/upload/catalog/controller/checkout/simplecheckout.php
+/upload/catalog/controller/checkout/simplecheckout_customer.php
+/upload/system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2012-12-11
+
+For updating you may upload only files from the "Changed Files", reinstalling not required.
+
+VERSION 3.2.2:
+
+- Fixed bug with "same address" for some sets of address fields
+
+CHANGED FILES:
+
+/upload/catalog/controller/checkout/simplecheckout_customer.php
+/upload/system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2012-12-10
+
+For updating you may upload only files from the "Changed Files", reinstalling not required.
+
+VERSION 3.2.1:
+
+- Changed default settings, for email set this regex /^[a-z0-9_\.\-]{1,20}@[a-z0-9\.\-]{1,20}\.[a-z]{2,4}$/si
+- Changed logic of saving custom fields for different sets of customer's fields.
+- Changed logic of scrolling to the first error
+- Changed logic of autoselecting pf first payment or shipping method
+
+CHANGED FILES:
+
+/upload/admin/controller/module/simple.php
+/upload/admin/model/tool/simplecustom.php
+/upload/catalog/controller/account/simpleaddress.php
+/upload/catalog/controller/account/simpleedit.php
+/upload/catalog/controller/account/simpleregister.php
+/upload/catalog/controller/checkout/simplecheckout.php
+/upload/catalog/controller/checkout/simplecheckout_customer.php
+/upload/catalog/controller/checkout/simplecheckout_payment.php
+/upload/catalog/controller/checkout/simplecheckout_shipping.php
+/upload/catalog/view/javascript/simplecheckout.js
+/upload/catalog/view/theme/*/template/checkout/simplecheckout_shipping.tpl
+/upload/catalog/view/theme/*/template/checkout/simplecheckout_payment.tpl
+/upload/system/library/simple/simple.php
+
+------------------------------
+
+DATE: 2012-12-09
+
+VERSION 3.2.0.1:
+
+- Fixed bug with minicart in the header for shoppica (non critical)
+- FIxed bug with "error warning" for empty cart with generated simple_header.tpl (non critical)
+- Fixed bug with links between groups and payment modules if used (non critical if don't used, otherwise the block with payment options may be empty)
+- Added vqmod for showing of klarna options always when address is empty (see /usefull vqmods but not required), by default in Swedish
+
+CHANGED FILES:
+
+/upload/catalog/controller/checkout/simplecheckout.php
+/upload/catalog/controller/checkout/simplecheckout_payment.php
+/upload/catalog/view/theme/*/template/checkout/simplecheckout_cart.tpl
+
+------------------------------
+
+DATE: 2012-12-05
+
+VERSION 3.2.0:
+
+Before updating from previous versions uninstall the module in the admin panel
+
+- Multistore are supported
+- Export / import of settings
+- Helper for the preparation of a template to integration with the theme which is very different from the default theme.
+So integration consists of uploading of templates (and generated templates) and changing of styles in simple.css if needed
+- Added headers and they can be added in a set of fields
+- Drag and drop added in the admin panel for the sets of fields
+- Removed the fields of the company, but now possible to select a group of customers and change a set of fields for different groups
+- Added two pages in the user's account (or rather replaced) - edit the account information and edit an address,
+which are also can be configured in the admin panel
+- Implemented saving an loading of custom data without API
+- Added vqmod for displaing of data of custom fields in the admin panel
+- A data of custom fields appends to an array of data passed to the models of the opencart therefore more
+easy to integrate custom fields with other modules which change the models or tables in a database
+- Simplified integration into Joomla, now only need to set the path and additional params in the admin panel of the module, no special scripts needed.
+- Changed styles for adaptive themes
+- You can change behaviour of the payment form in the admin panel of the module (show it asap or only after clicking on 'create order')
+- You can change text of 'confirm order' for each payment module in the language files of these modules (add $_['button_confirm'] = 'Text of the button')
+- Added a setting for selecting of mode for geoip in the admin panel
+- Added the links between customer groups and shipping/payment modules
+- Changed the template of the simplecheckout cart and possible to hide columns of the cart in the styles (simple.css)
+- Added example for three column's layout for the simplecheckout page, you can set it in the admin panel of the module
+- Included Google API for searching of customer's location by postcode
+
+CHANGED FILES:
+
+All files changed
+
+------------------------------
+
+DATE: 2012-11-03
+
+VERSION 3.1.5:
+
+- Fixed bug in javascript with mijoshop (for joomla)
+- FIxed bug with customer_group_id on registering via checkout process
+- Small changes in calculating of tax for version < 1.5.2
+
+CHANGED FILES:
+
+/upload/catalog/view/javascript/simplecheckout.js
+/upload/catalog/controller/checkout/simplecheckout_customer.php
+/upload/catalog/controller/checkout/simplecheckout.php
+
+------------------------------
+
+DATE: 2012-10-31
+
+VERSION 3.1.4:
+
+- Fixed bug with retrieving custom data from the API
+- Small changes in simplecheckout_customer.php and simplecheckout_customer.tpl for disabling popup login box for mobile devices
+- Changed logic for autoselecting of first payment/shipping methods if these blocks hided
+- Added templates for Sellegance
+
+CHANGED FILES:
+
+/upload/catalog/controller/checkout/simplecheckout_customer.php
+/upload/catalog/view/theme/*/template/checkout/simplecheckout_customer.tpl
+/upload/catalog/controller/checkout/simplecheckout_payment.php
+/upload/catalog/controller/checkout/simplecheckout_shipping.php
+
+
+------------------------------
+
+DATE: 2012-10-29
+
+VERSION 3.1.3:
+
+- Small changes in javascript of admin panel
+- Changed the logic for generating password when autogenerating enabled
+- Added templates for Moshi
+- Added checking for empty email in the situation when all default fields deleted and register on checkout enabled
+
+CHANGED FILES:
+
+/upload/catalog/controller/account/simpleregister.php
+/upload/catalog/controller/checkout/simplecheckout_customer.php
+/upload/catalog/view/theme/*/template/checkout/simplecheckout_customer.tpl
+/upload/catalog/view/theme/*/template/account/simpleregister.tpl
+/upload/catalog/view/javascript/simplecheckout.js
+
+------------------------------
+
+DATE: 2012-10-29
+
+VERSION 3.1.2:
+
+- Fixed bugs with placeholders
+- Fixed bug with javascript for old versions of jquery
+- Fixed bug with validation for different sets of customer fields
+- Fixed style of simpleregister for shoppica2
+- Added param "disable guest checkout" in the settings
+
+CHANGED FILES:
+
+/upload/catalog/controller/checkout/simplecheckout.php
+/upload/catalog/controller/checkout/simplecheckout_customer.php
+/upload/catalog/view/theme/*/template/checkout/simplecheckout_customer.tpl
+/upload/catalog/view/theme/*/template/account/simpleregister.tpl
+/upload/catalog/view/javascript/simplecheckout.js
+
+------------------------------
+
+DATE: 2012-10-28
+
+VERSION 3.1.1:
+
+- Fixed bugs with updating weight in heading title
+- Changed the javascript for showing errors in hidden payment and shipping blocks (for example if no methods for entered address)
+- Changed cart template for shoppica2 for mobile devices
+- Fixed bug with methods for version 1.5.1.3 (some methods of opencart are equal of version 1.5.2 but not of 1.5.1)
+
+CHANGED FILES:
+
+/upload/catalog/controller/checkout/simplecheckout.php
+/upload/catalog/controller/checkout/simplecheckout_cart.php
+/upload/catalog/view/theme/*/template/checkout/simplecheckout.tpl
+/upload/catalog/view/theme/*/template/checkout/simplecheckout_cart.tpl
+/upload/catalog/view/javascript/simplecheckout.js
+
+------------------------------
+
+DATE: 2012-10-27
+
+VERSION 3.1.0:
+
+- Fixed bugs from v 3.0
+- Added new settings (payment form in the simplecheckout template, disabling cookies, set of autoupdate fields)
+
+CHANGED FILES:
+
+ALL FILES CHANGED
+
+------------------------------
+
+DATE: 2012-10-25
+
+VERSION 3.0.0.1:
+
+- Moved method delete_order from simpledata.php to simplecheckout.php
+- Added templates for Hyla
+
+CHANGED FILES:
+
+/upload/catalog/controller/checkout/simplecheckout.php
+/upload/catalog/model/tool/simpledata.php
+
+------------------------------
+
+DATE: 2012-10-25
+
+VERSION 3.0.0:
+
+- Added new features (min/max values, type "date" for fields and other)
+- Changed javascript and styles for compatibility with mobile devices
+
+ATTENTION:
+
+If you update the module please firstly uninstall and then install it in the admin panel.
+If you use theme that not presents in the /templates and previously you changed styles in
+the simple.css please copy styles for buttons, blocks, headers from older simple.css to the new.
+
+CHANGED FILES:
+
+All files changed
+
+------------------------------
+
+DATE: 2012-10-05
+
+VERSION 2.3.12:
+
+- Reorganized templates in the archive, added new theme hyla
+- Fixed small bugs
+
+CHANGED FILES:
+
+/upload/catalog/controller/checkout/simplecheckout.php (added var 'template' for cart_empty.tpl for suppor of shoppica theme)
+/upload/catalog/controller/checkout/simplecheckout_payment.php (fixed small bug with no payment text)
+/upload/catalog/controller/checkout/simplecheckout_shipping.php (fixed small bug with no shipping text)
+/upload/catalog/view/theme/default/stylesheet/simple.css (small changes for plus minus in the cart)
+/upload/catalog/view/theme/default/template/checkout/simplecheckout_cart.tpl (small changes for plus minus in the cart)
+/upload/catalog/view/theme/default/template/error/cart_empty.tpl (added suppor of shoppica theme)
+/upload/system/library/url.php
+
+------------------------------
+
+DATE: 2012-10-03
+
+VERSION 2.3.11:
+
+- Fixed bug with displaying taxes in info of an order
+
+CHANGED FILES:
+
+/upload/catalog/controller/checkout/simplecheckout_customer.php
+
+------------------------------
+
+DATE: 2012-10-01
+
+VERSION 2.3.10:
+
+- Changed templates for displaying no shipping/payment methods
+
+CHANGED FILES:
+
+/upload/catalog/controller/checkout/simplecheckout_shipping.php
+/upload/catalog/controller/checkout/simplecheckout_payment.php
+/upload/catalog/view/theme/default/template/checkout/simplecheckout_shipping.tpl
+/upload/catalog/view/theme/default/template/checkout/simplecheckout_payment.tpl
+
+------------------------------
+
+DATE: 2012-09-30
+
+VERSION 2.3.9:
+
+- Changed templates for shipping block for compatibility with some methods
+- Added plus and minus button in the block of the cart
+- Changed logic for replacing links to the cart. If customer visited route=checkout/cart directly for some reasons then
+the link to the cart doesn't changed to prevent error with updating of the cart.
+
+ADDED FILES:
+
+upload/catalog/view/theme/default/template/error/cart_empty.tpl
+
+CHANGED FILES:
+
+/upload/catalog/controller/checkout/simplecheckout_shipping.php
+/upload/catalog/view/theme/default/stylesheet/simple.css (small changes for plus minus in the cart)
+/upload/catalog/view/theme/default/template/checkout/simplecheckout_cart.tpl
+/upload/catalog/view/theme/default/template/checkout/simplecheckout_shipping.tpl
+/upload/system/library/url.php
+
+------------------------------
+
+DATE: 2012-09-28
+
+VERSION 2.3.8:
+
+- Changed templates for shipping and payment block for compatibility with some methods
+- Changed logic for saving custom fields with type "radio" or "select". Now saves a value from array of values by key.
+
+CHANGED FILES:
+
+/upload/catalog/controller/checkout/simplecheckout_customer.php
+/upload/catalog/controller/checkout/simplecheckout_shipping.php
+/upload/catalog/view/javascript/simplecheckout.js
+/upload/catalog/view/theme/default/template/checkout/simplecheckout_payment.tpl
+/upload/catalog/view/theme/default/template/checkout/simplecheckout_shipping.tpl
+
+------------------------------
+
+DATE: 2012-09-25
+
+VERSION 2.3.7:
+
+- Fixed bug with custom company fields
+
+CHANGED FILES:
+
+/upload/catalog/controller/checkout/simplecheckout_customer.php
+
+------------------------------
+
+DATE: 2012-09-18
+
+VERSION 2.3.6:
+
+- Fixed bug with display_customer_group_id if opencart updated from previous versions
+- Changed main controller and javascript for prevent reloading customer form if fields sets for various shipping methods not used.
+
+CHANGED FILES:
+
+/upload/catalog/controller/account/simpleregister.php
+/upload/catalog/controller/checkout/simplecheckout.php
+/upload/catalog/controller/checkout/simplecheckout_customer.php
+/upload/catalog/view/javascript/simplecheckout.js
+/upload/catalog/view/theme/default/template/checkout/simplecheckout.tpl
+
+------------------------------
+
+DATE: 2012-09-12
+
+VERSION 2.3.5:
+
+- Added field customer_group_id in main fields of the module
+
+CHANGED FILES:
+
+/upload/admin/controller/module/simple.php
+/upload/catalog/controller/account/simpleregister.php
+/upload/catalog/controller/checkout/simplecheckout_customer.php
+
+------------------------------
+
+DATE: 2012-09-07
+
+VERSION 2.3.3:
+
+- Fixed some bugs
+- Changed javascript for scrolling to error message.
+
+CHANGED FILES:
+
+/upload/catalog/controller/checkout/simplecheckout.php
+/upload/catalog/controller/checkout/simplecheckout_customer.php
+/upload/catalog/view/javascript/simplecheckout.js
+/upload/catalog/view/theme/default/template/checkout/simplecheckout.tpl
+/upload/catalog/view/theme/default/template/checkout/simplecheckout_cart.tpl
+
+-------------------------
+
+DATE: 2012-09-04
+
+VERSION 2.3.2:
+
+- Fixed bug in javascript
+- Fixed bug with zone_id and mismatched country_id
+
+CHANGED FILES:
+
+/upload/catalog/controller/checkout/simplecheckout_customer.php
+/upload/catalog/controller/checkout/simplecheckout_payment.php
+/upload/catalog/view/javascript/simplecheckout.js
+/upload/catalog/view/theme/default/template/checkout/simplecheckout_payment.tpl
+
+-------------------------
+
+DATE: 2012-09-03
+
+VERSION 2.3.1:
+
+- Fixed bug with same billing address in some cases
+- Added supporting of maxmind geolite country stored in database.
+
+You can donwnolad dump from http://simpleopencart.com/downloads/maxmind_geo_country.zip
+Import this file into your database and then uncomment line in simplegeo.php
+ModelToolSimpleGeo::$geo = $this->getGeoIpByMaxMindFromDataBase();
+After that don't forget comment previous block of code for determining location (it's no necessary but usefull):
+/*ModelToolSimpleGeo::$geo = $this->getGeoIpBySimpleOpenCart();
+
+if (!is_array(ModelToolSimpleGeo::$geo)) {
+    ModelToolSimpleGeo::$geo = $this->getGeoIpByMaxMind();
+}*/
+
+
+CHANGED FILES:
+
+/upload/catalog/controller/checkout/simplecheckout_customer.php
+/upload/catalog/model/tool/simplegeo.php
+/upload/catalog/view/theme/default/template/checkout/simplecheckout_customer.tpl
+
+--------------------
+
+DATE: 2012-09-02
+
+VERSION 2.3.0:
+
+- Added supporting billing address
+
+CHANGED FILES:
+
+/upload/admin/controller/module/simple.php
+/upload/admin/language/english/module/simple.php
+/upload/admin/language/russian/module/simple.php
+/upload/admin/view/template/module/simple.tpl
+/upload/catalog/controller/checkout/simplecheckout_customer.php
+/upload/catalog/controller/checkout/simplecheckout_payment.php
+/upload/catalog/language/english/checkout/simplecheckout.php
+/upload/catalog/language/russian/checkout/simplecheckout.php
+/upload/catalog/view/javascript/simplecheckout.js
+/upload/catalog/view/theme/default/template/checkout/simplecheckout.tpl
+/upload/catalog/view/theme/default/template/checkout/simplecheckout_customer.tpl
+
+---------------
+
+DATE: 2012-08-19
+
+VERSION 2.2.0:
+
+- Added supporting Opencart v 1.5.4
+
+CHANGED FILES:
+
+/upload/admin/controller/module/simple.php
+/upload/catalog/controller/checkout/simplecheckout_cart.php
+/upload/catalog/controller/checkout/simplecheckout_customer.php
+/upload/catalog/view/theme/default/template/checkout/simplecheckout_customer.tpl
+/upload/catalog/view/theme/default/template/account/simpleregister.tpl
+/upload/catalog/view/javascript/simplecheckout.js
+/upload/catalog/view/javascript/simpleregister.js
+
+----------
+
+DATE: 2012-08-13
+
+ATTENTION!
+
+Don't forget to copy all files from folder /upload/catalog/view/theme/default/ to your theme folder!
+
+VERSION 2.1.0:
+
+- Added jQuery masked input plugin for fields
+- Added autocomplete for field "city" (if oc_geo is filled)
+- Added html supporting for labels of fields
+- Added custom field "select from api"
+- Added generating of password
+- Improved first load of the simplecheckout page
+- Small changes in displaying logic
+- Fixed small bugs from previous version
+
+ADDED FILES:
+
+/upload/catalog/view/javascript/jquery/jquery.maskedinput-1.3.min.js
+
+CHANGED FILES:
+
+/upload/catalog/view/theme/default/stylesheet/simple.css (only one class added for proceed text block)
+/upload/admin/controller/module/simple.php
+/upload/admin/language/english/module/simple.php
+/upload/admin/language/russian/module/simple.php
+/upload/admin/view/template/module/simple.tpl
+/upload/catalog/controller/account/simpleregister.php
+/upload/catalog/controller/checkout/simplecheckout.php
+/upload/catalog/controller/checkout/simplecheckout_cart.php
+/upload/catalog/controller/checkout/simplecheckout_customer.php
+/upload/catalog/controller/checkout/simplecheckout_payment.php
+/upload/catalog/controller/checkout/simplecheckout_shipping.php
+/upload/catalog/model/tool/simplegeo.php
+/upload/catalog/language/english/checkout/simplecheckout.php
+/upload/catalog/language/russian/checkout/simplecheckout.php
+/upload/catalog/view/theme/default/template/checkout/simplecheckout.tpl
+/upload/catalog/view/theme/default/template/checkout/simplecheckout_customer.tpl
+/upload/catalog/view/theme/default/template/account/simpleregister.tpl
+/upload/catalog/view/javascript/simplecheckout.js
+/upload/catalog/view/javascript/simpleregister.js
+
+-----
+
+DATE: 2012-07-13
+
+VERSION 2.0.12:
+
+- Fixed bug with utf8
+- Fixed bug with javascript and checking of copyright on some devices
+- Added geo ip by maxmind (if you implemented own logic don't upload this file)
+
+CHANGED FILES:
+
+/upload/catalog/model/tool/simplegeo.php
+/upload/catalog/controller/account/simpleregister.php
+/upload/catalog/controller/checkout/simplecheckout_customer.php
+/upload/catalog/view/javascript/simplecheckout.js
+
+-----
+
+DATE: 2012-07-11
+
+VERSION 2.0.11:
+
+- Fixed bug with clients with multiple shipping addresses, and missing delivery option to one of the addresses
+
+CHANGED FILES:
+
+/upload/catalog/controller/checkout/simplecheckout_customer.php
+/upload/catalog/controller/checkout/simplecheckout_payment.php
+/upload/catalog/controller/checkout/simplecheckout_shipping.php
+
+-----

@@ -1,0 +1,28 @@
+<modification>
+    <id>Simple Disabling of validation in edit order form</id>
+    <version>1.0.0</version>
+    <vqmver>2.1</vqmver>
+    <author>deeman</author>
+
+    <file name="catalog/controller/api/customer.php">
+        <operation>
+            <search position="before"><![CDATA[if (!$json) {]]></search>
+            <add><![CDATA[unset($json['error']);]]></add>
+        </operation>
+    </file>
+
+    <file name="catalog/controller/api/payment.php">
+        <operation>
+            <search position="before"><![CDATA[if (!$json) {]]></search>
+            <add><![CDATA[unset($json['error']);]]></add>
+        </operation>
+    </file>
+
+    <file name="catalog/controller/api/shipping.php">
+        <operation>
+            <search position="before"><![CDATA[if (!$json) {]]></search>
+            <add><![CDATA[unset($json['error']);]]></add>
+        </operation>
+    </file>
+
+</modification>

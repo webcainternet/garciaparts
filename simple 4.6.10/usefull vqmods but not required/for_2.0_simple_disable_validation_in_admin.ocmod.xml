@@ -1,0 +1,29 @@
+<modification>
+    <name>Simple Disabling of validation in edit order form</name>
+    <code>Simple Disabling of validation in edit order form</code>
+    <version>1.0.0</version>
+    <author>deeman</author>
+    <link>http://simpleopencart.com</link>
+
+    <file path="catalog/controller/api/customer.php">
+        <operation>
+            <search><![CDATA[if (!$json) {]]></search>
+            <add position="before"><![CDATA[unset($json['error']);]]></add>
+        </operation>
+    </file>
+
+    <file path="catalog/controller/api/payment.php">
+        <operation>
+            <search><![CDATA[if (!$json) {]]></search>
+            <add position="before"><![CDATA[unset($json['error']);]]></add>
+        </operation>
+    </file>
+
+    <file path="catalog/controller/api/shipping.php">
+        <operation>
+            <search><![CDATA[if (!$json) {]]></search>
+            <add position="before"><![CDATA[unset($json['error']);]]></add>
+        </operation>
+    </file>
+
+</modification>

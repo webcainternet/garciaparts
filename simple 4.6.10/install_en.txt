@@ -1,0 +1,85 @@
+@author	Dmitriy Kubarev
+@link   http://www.simpleopencart.com
+@link	http://www.opencart.com/index.php?route=extension/extension/info&extension_id=4811
+@date	2014-03-23
+
+Setup:
+
+At least the 4.4 version of the ionCube Loader is required for the encoded files to run
+
+ATTENTION! If version of your store is 1.5.1.3, please, replace this file /admin/model/setting/setting.php on the file from folder /model of settings for 1.5.1.3
+The bug exists in this file in version 1.5.1.3 which causes the issue during installation of the module.
+
+ATTENTION! Please remove a vqmod simple_custom_data.xml if you are doing an update from old versions of the module!
+
+1) Backup the file /system/library/url.php
+
+2) Copy all files from the folder /upload/ to your server in catalog of your store
+
+3.1) For opencart 1.5.х:
+If used theme is not default please upload all files from
+
+/upload/catalog/view/theme/default/
+
+to
+
+catalog/view/theme/YOUR_THEME/
+
+3.2) For opencart 2.х:
+Please upload all files from folder
+
+/opencart 2.x - templates/ to
+
+catalog/view/theme/YOUR_THEME/
+
+even in case when you use default theme.
+
+4) If you are updating module from old versions (3.x.x) please firstly uninstall it in the admin panel of Opencart.
+
+5) Install the module in the Admin Panel and check settings of the module.
+
+6) If your theme is default or closest to default or all pages of the module look good please skip this step.
+In other way please download files simple_header.tpl and simple_footer.tpl from a tab Integration -> Template
+and upload it in the following folder on your server:
+
+/catalog/view/theme/YOUR_THEME/template/common
+
+These files include templates of your theme for all pages of the module.
+
+All styles of the module are described in the /catalog/view/theme/YOUR_THEME/stylesheet/simple.css
+
+8) Don't forget to translate labels of fields to your language in admin panel of module.
+Otherwise you'll see the field's identificators on the module's pages.
+
+9) You can enable/disable the links to the module's pages in admin panel of the module.
+
+10) You can add own custom fields and headers, use drag and drop to sort it.
+
+11) For displaying of custom fields in the admin panel you must to install vqmod system and upload simple_custom_data.xml from the archive.
+In order to include new custom fields in emails please add identificators of the fields (in brackets {}) in a template of an address for your country (in Localisation)
+
+12) Also you can implement own geo ip service in the class SimpleGeo /upload/catalog/model/tool/simplegeo.php
+The method getGeoIp() must return array with this array:
+array(
+    'country_id' => '',
+    'zone_id' => '',
+    'city' => '',
+    'postcode' => ''
+);
+
+Method getGeoIpBySimpleOpenCart() works with tables geo and geo_ip which I collected for Russian Federation from open databases.
+Method getGeoIpByMaxMind() works with installed maxmind extension.
+If you don't have maxmind extension on your server, you can use table for mysql which I got from free maxmind geolite country.
+You can donwload it from http://simpleopencart.com/downloads/maxmind_geo_country.zip
+After dowloading please import this file into your database via PhpMyAdmin
+You can select the mode for geoip in the admin panel of the module
+
+13) Subtotals of a cart may be configured via the settings of "Order Totals" modules.
+
+14) If you changed the folder for admin pages, please change it in the vqmod simple_custom_data.xml
+For example if you renamed it to the myadmin then rename these lines
+admin/view/template/sale/customer_form.tpl
+admin/view/template/sale/order_info.tpl
+on the
+myadmin/view/template/sale/customer_form.tpl
+myadmin/view/template/sale/order_info.tpl

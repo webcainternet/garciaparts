@@ -1,0 +1,13 @@
+ATTENTION! If you update the module from old versions, please delete a vqmod simple_custom_data.xml and use files from a folder /upload
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+For updating from versions > 4.0.0
+
+1) Copy all subfolders from the folder "Update" to your server
+2) Copy templates from the folder update/catalog/view/theme/default/ to your theme's folder catalog/view/theme/your_theme/
+
+Incremental update doesn't includes language files so please check differencies between installed language files of the module and language files 
+in main archive of the module and copy these files or necessary lines of them.
+
+All changes which you created before will be saved, if you didn't changed the core of the module.
