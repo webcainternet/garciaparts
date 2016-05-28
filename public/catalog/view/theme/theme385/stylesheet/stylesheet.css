@@ -3082,7 +3082,7 @@ table.radio {
 	border-bottom:0;
 	}
 /*********************************************************************/
-table.radio tbody td {width:100%}
+table.radio tbody td {}
 .sitemap-info ul {
 	margin-top:10px;
 }
