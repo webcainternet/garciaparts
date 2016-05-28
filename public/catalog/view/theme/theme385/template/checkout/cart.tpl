@@ -7,6 +7,9 @@
 .name a {
     font-weight: 400;
 }
+.table .total, .table .price {
+    font-weight: normal;
+}
 </style>
 
 <?php echo $column_left; ?>
