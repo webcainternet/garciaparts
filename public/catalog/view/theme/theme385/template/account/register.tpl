@@ -84,7 +84,7 @@
 					</div>
 				</td>
 			</tr>
-			<tr>
+			<?php /* <tr>
 				<td>
 					<div class="form-group">
 						<label class="control-label col-sm-5" for="fax"><?php echo $entry_fax; ?></label>
@@ -93,13 +93,13 @@
 						</div>
 					</div>
 				</td>
-			</tr>
+			</tr> */ ?>
 		  </table>
 		</div>
 		<h2><?php echo $text_your_address; ?></h2>
 		<div class="content">
 		  <table class="form">
-			<tr>
+			<?php /* <tr>
 			</tr>
 				<td>
 					<div class="form-group">
@@ -108,7 +108,7 @@
 							<input class="q1" type="text" name="company" value="<?php echo $company; ?>" />
 						</div>
 					</div>
-				</td>
+				</td> */ ?>
 			<tr style="display: <?php echo (count($customer_groups) > 1 ? 'table-row' : 'none'); ?>;">
 				<td>
 					<div class="form-group">
