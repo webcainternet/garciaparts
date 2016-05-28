@@ -3689,3 +3689,7 @@ li .padding:hover {
 .compare {
 	display: none;
 }
+
+.footer_box > h5 {
+		color: #444;
+	}

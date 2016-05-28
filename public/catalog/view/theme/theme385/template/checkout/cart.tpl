@@ -4,6 +4,9 @@
 	.table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
      border: 0px;
 }
+.table-bordered {
+	border: 0px !important;
+}
 .name a {
     font-weight: 400;
 }
@@ -58,7 +61,7 @@
                   </td>
                 </tr>
             <?php endif; ?>
-		  <tr>
+		  <tr style="    border-bottom: solid 1px #ccc;">
 			<td class="image"><?php if ($product['thumb']) { ?>
 			  <a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" /></a>
 			  <?php } ?></td>

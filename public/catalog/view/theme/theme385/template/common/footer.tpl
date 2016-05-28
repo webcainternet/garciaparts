@@ -19,42 +19,43 @@
 <footer>
   <div class="container">
 	<div class="row">
-		<div class="col-sm-3" style="width: 18%;">
+		<div class="col-sm-2" style="width: 15%;">
+			<img src="/image/data/logo_garcia_110_ver.png" style="margin-top: 20px; max-width: 85%;">
+		</div>
+
+		<div class="col-sm-3" style="width: 15%;">
 			<div class="footer_box">
-				<h5>Como comprar</h5>
+				<h5>Informações</h5>
 				<ul class="list-unstyled">
-				<li><a href="/garantia">Garantia de Produtos</a></li>
-				<li><a href="/privacidade">Políticas de Privacidade</a></li>
+				<li><a href="/sobre">Sobre a Garcia Parts</a></li>
 				<li><a href="/entrega">Políticas de Entrega</a></li>
-				<li><a href="/troca">Políticas de Troca</a></li>
-				<li><a href="/termos">Termos e Condições</a></li>
-				<li><a href="/index.php?route=account/return/add">Devoluções</a></li>
 				</ul>
 			</div>
 		</div>
 
-		<div class="col-sm-3" style="width: 18%;">
+		<div class="col-sm-3" style="width: 15%;">
 			<div class="footer_box">
-				<h5>Institucional</h5>
+				<h5>Atendimento</h5>
 				<ul class="list-unstyled">
-				<li><a href="/sobre">Sobre nós</a></li>
-				<li><a href="/index.php?route=information/contact">Contate-nos</a></li>
+				<li><a href="/index.php?route=information/contact">Contato</a></li>
+				<li><a href="/index.php?route=account/return/insert">Devoluções</a></li>
 				<li><a href="/index.php?route=information/sitemap">Mapa da Loja</a></li>
-				
 				</ul>
 			</div>
 		</div>
 
-		<div class="col-sm-3" style="width: 24%;">
+		<div class="col-sm-3" style="width: 15%;">
 			<div class="footer_box">
-				<h5>Fale Conosco</h5>
+				<h5>Minha Conta</h5>
 				<ul class="list-unstyled">
-				<li><a href="mailto:contato@garciaparts.com.br">contato@garciaparts.com.br</a></li>
+				<li><a href="/index.php?route=account/account">Minha Conta</a></li>
+				<li><a href="/index.php?route=account/order">Histórico de Pedidos</a></li>
+				<li><a href="/index.php?route=account/newsletter">Newsletter</a></li>
 				</ul>
 			</div>
 		</div>
 
-		<div class="col-sm-3" style="width: 40%;">
+		<div class="col-sm-3" style="width: 38%;">
 			<div class="footer_box">
 				<h5>Formas de Pagamento</h5>
 				<ul class="list-unstyled">
@@ -72,53 +73,7 @@
 			</div>
 		</div>
 
-		<?php /*
-
-		<div class="col-sm-3">
-			<?php if ($informations) { ?>
-			<div class="footer_box">
-				<h5><?php echo $text_information; ?></h5>
-				<ul class="list-unstyled">
-				<?php foreach ($informations as $information) { ?>
-				<li><a href="<?php echo $information['href']; ?>"><?php echo $information['title']; ?></a></li>
-				<?php } ?>
-				</ul>
-			</div>
-			<?php } ?>
-		</div>
-		<div class="col-sm-3">
-			<div class="footer_box">
-				<h5><?php echo $text_service; ?></h5>
-				<ul class="list-unstyled">
-				<li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li>
-				<li><a href="<?php echo $return; ?>"><?php echo $text_return; ?></a></li>
-				<li><a href="<?php echo $sitemap; ?>"><?php echo $text_sitemap; ?></a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="col-sm-3">
-			<div class="footer_box">
-				<h5><?php echo $text_extra; ?></h5>
-				<ul class="list-unstyled">
-				<li><a href="<?php echo $manufacturer; ?>"><?php echo $text_manufacturer; ?></a></li>
-				<li><a href="<?php echo $voucher; ?>"><?php echo $text_voucher; ?></a></li>
-				<li><a href="<?php echo $affiliate; ?>"><?php echo $text_affiliate; ?></a></li>
-				<li><a href="<?php echo $special; ?>"><?php echo $text_special; ?></a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="col-sm-3">
-			<div class="footer_box">
-				<h5><?php echo $text_account; ?></h5>
-				<ul class="list-unstyled">
-				<li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
-				<li><a href="<?php echo $order; ?>"><?php echo $text_order; ?></a></li>
-				<li><a href="<?php echo $wishlist; ?>"><?php echo $text_wishlist; ?></a></li>
-				<li><a href="<?php echo $newsletter; ?>"><?php echo $text_newsletter; ?></a></li>
-				</ul>
-			</div>
-		</div>
-		*/ ?>
+		<div style="margin-left: 15px;margin-top: -10px;" class="fb-like" data-href="https://www.facebook.com/garciaparts" data-width="650px" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
 	</div>
 	
   </div>
@@ -131,7 +86,16 @@
 			</div> 
 
 			<div class="container" style="width: 50%; float: left; text-align: right;">
-				Certificado: <img src="/image/comodo_secure_76x26_transp.png">
+
+
+
+				Certificado: <a href="https://ssl.comodo.com" target="_blank">
+					<img src="https://ssl.comodo.com/images/comodo_secure_seal_76x26_transp.png" alt="SSL" width="76" height="26" style="border: 0px;">
+				<span style="font-weight:bold; font-size:7pt">SSL</span></a>
+
+				<a href="https://lojavirtual.digital/" target="_blank">
+						<img style="background-color: #FFF; border: 0px; margin-right: 20px; padding: 5px; border: solid 1px #EFD6B3;" src="/image/LOGO-LOJAVIRTUAL-300px.png" alt="Loja Virtual .digital" height="40">
+				</a>
 			</div> 
 			&nbsp;
 		</div>
