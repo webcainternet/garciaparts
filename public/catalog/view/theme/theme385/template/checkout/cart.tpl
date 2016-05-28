@@ -96,48 +96,51 @@
   </form>
   <?php if ($coupon_status || $voucher_status || $reward_status || $shipping_status) { ?>
    <h2><?php echo $text_next; ?></h2>
-  <div class="content shop-cart-content">
+  <div class="content shop-cart-content" style="float: left; width: 50%; display: none;">
    
 	<p><?php echo $text_next_choice; ?></p>
-	<table class="radio table table-bordered table-hover">
+	<table class="radio table table-bordered table-hover" style="border: 0px !important;">
 	  <?php if ($coupon_status) { ?>
 	  <tr class="highlight">
-			<td><div class="radio"><label  for="use_coupon"><input type="radio" name="next" value="coupon" id="use_coupon" /><?php echo $text_use_coupon; ?></label></div></td>
+			<td style="border: 0px;"><div class="radio"><label  for="use_coupon"><input type="radio" name="next" value="coupon" id="use_coupon" /><?php echo $text_use_coupon; ?></label></div></td>
 	  </tr>
 	  <?php } ?>
 	  <?php if ($voucher_status) { ?>
 	  <tr class="highlight">
-		 <td><div class="radio"><label  for="use_voucher"><input type="radio" name="next" value="voucher" id="use_voucher" /><?php echo $text_use_voucher; ?></label></div></td>
+		 <td style="border: 0px;"><div class="radio"><label  for="use_voucher"><input type="radio" name="next" value="voucher" id="use_voucher" /><?php echo $text_use_voucher; ?></label></div></td>
 	  </tr>
 	  <?php } ?>
 	  <?php if ($reward_status) { ?>
 	  <tr class="highlight">
 		
-		<td><div class="radio"><label  for="use_reward"><input type="radio" name="next" value="reward" id="use_reward" /><?php echo $text_use_reward; ?></label></div></td>
+		<td style="border: 0px;"><div class="radio"><label  for="use_reward"><input type="radio" name="next" value="reward" id="use_reward" /><?php echo $text_use_reward; ?></label></div></td>
 	  </tr>
 	  <?php } ?>
 	  <?php if ($shipping_status) { ?>
 	  <tr class="highlight">
 		
-		<td><div class="radio"><label  for="shipping_estimate"><input type="radio" name="next" value="shipping" id="shipping_estimate" /><?php echo $text_shipping_estimate; ?></label></div></td>
+		<td style="border: 0px;"><div class="radio"><label  for="shipping_estimate"><input type="radio" name="next" value="shipping" id="shipping_estimate" /><?php echo $text_shipping_estimate; ?></label></div></td>
 	  </tr>
 	  <?php } ?>
 	</table>
   </div>
-  <div class="cart-module">
-	<div id="coupon" class="content">
+  <div class="cart-module" style="float: left; width: 50%;">
+	<div id="coupon" class="content" style="padding: 0px;">
+
 		<form class="form-horizontal" action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="coup">
+
 			<div class="form-group">
-				<label class="control-label col-sm-5" for="coupon"><?php echo $entry_coupon; ?>&nbsp;</label>
+				<label class="control-label col-sm-5" style="text-align: left; width: 100%;" for="coupon"><?php echo $entry_coupon; ?>&nbsp;</label>
 				<div class="controls col-sm-7">
-					<input type="text" name="coupon" value="<?php echo $coupon; ?>" />
+					<input type="text" name="coupon" value="<?php echo $coupon; ?>" style="margin: 10px 0px;" />
 					<input type="hidden" name="next" value="coupon" />&nbsp;
-					<a onclick="$('#coup').submit();" class="button-cont-right"><?php echo $button_coupon; ?><i class="fa fa-arrow-circle-right"></i></a>
+
+					<a onclick="$('#coup').submit();" class="button" style="background-color: #CCC"><span>Aplicar Cupom</span></a>
 				</div>
 			</div>
 		</form>
 	</div>
-	<div id="voucher" class="content">
+	<div id="voucher" class="content" style="display: none;">
 		<form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="gift" class="form-horizontal">
 			<div class="form-group">
 				<label class="control-label col-sm-5" for="voucher"><?php echo $entry_voucher; ?>&nbsp;</label>
@@ -152,7 +155,7 @@
 			
 		</form>
 	</div>
-	<div id="reward" class="content">
+	<div id="reward" class="content" style="display: none;">
 		<form class="form-horizontal"  action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="rew">
 			<div class="form-group">
 				<label class="control-label col-sm-5" for="reward"><?php echo $entry_reward; ?>&nbsp;</label>
@@ -164,78 +167,53 @@
 				</div>
 			</div>
 		</form>
-	</div>
-	<div id="shipping" class="content">
-	  <p><?php echo $text_shipping_detail; ?></p>
-	  <table class="form-horizontal" width="100%">
-		<tr>
-			<td>
-				<div class="form-group">
-					<label class="control-label col-sm-5" for="country_id"><span class="required">*</span> <?php echo $entry_country; ?></label>
-					<div class="controls col-sm-7">
-						<select name="country_id">
-							<option value=""><?php echo $text_select; ?></option>
-							<?php foreach ($countries as $country) { ?>
-							<?php if ($country['country_id'] == $country_id) { ?>
-							<option value="<?php echo $country['country_id']; ?>" selected="selected"><?php echo $country['name']; ?></option>
-							<?php } else { ?>
-							<option value="<?php echo $country['country_id']; ?>"><?php echo $country['name']; ?></option>
-							<?php } ?>
-							<?php } ?>
-						</select>
-					</div>
-				</div>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<div class="form-group">
-					<label class="control-label col-sm-5" for="zone_id"><span class="required">*</span> <?php echo $entry_zone; ?></label>
-					<div class="controls col-sm-7">
-						<select name="zone_id">
-						</select>
-					</div>
-				</div>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<div class="form-group">
-					<label class="control-label col-sm-5" for="zone_id"><span id="postcode-required" class="required">*</span> <?php echo $entry_postcode; ?></label>
-					<div class="controls col-sm-7">
-						<input type="text" name="postcode" value="<?php echo $postcode; ?>" />
-					</div>
-				</div>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<div class="form-group">
-					<div class="controls col-sm-7">
-						<a id="button-quote" class="button-cont-right"><?php echo $button_quote; ?><i class="fa fa-arrow-circle-right"></i></a>
-					</div>
-				</div>
-			</td>
-		</tr>
-	  </table>
-	  </div>
-	</div>
+	</div>	
+</div>
 	<?php } ?>
   
-  <div class="cart-bottom">
-	<div class="cart-total">
-	<table id="total" class="table table-bordered">
+  <div class="cart-bottom" style="float: left; width: 50%; margin-top: -20px;">
+
+  	<div id="shipping" class="content">
+	  <p><?php echo $text_shipping_detail; ?></p>
+
+		<div class="controls col-sm-7" style="display: none;">
+			<select name="country_id">
+				<option value="30" selected="selected">Brazil</option>
+			</select>
+		</div>
+
+		<div class="controls col-sm-7" style="display: none;">
+			<select name="zone_id">
+				<option value="464">São Paulo</option>
+			</select>
+		</div>
+
+		<div>
+			<input style="margin: 10px 0px;" type="text" name="postcode" value="<?php echo $postcode; ?>" />
+		</div>
+
+		<div class="controls">
+			<a id="button-quote" class="button" style="background-color: #CCC"><span><?php echo $button_quote; ?></span></a>
+		</div>
+
+	  </div>
+
+	<div class="cart-total" style="margin-top: 10px; background: #f9f9f9;">
+	<table id="total" class="table table-bordered" style="border: 0px;">
 	  <?php $count =0; foreach ($totals as $total) { $count +=1; if ($total == end($totals)) {$a='last';} else {$a='';} ?>
-	  <tr class="row-table-<?php echo $count; ?>">
-		<td class="right cart-total-name <?php echo $a;?>" ><b><?php echo $total['title']; ?>:</b></td>
-		<td class="right cart-total1 <?php echo $a;?>"><?php echo $total['text']; ?></td>
+	  <tr class="row-table-<?php echo $count; ?>" style="line-height: 0;">
+		<td class="right cart-total-name <?php echo $a;?>" style="border: 0px; background-color: #f9f9f9; line-height: 0; color: #333;"><b><?php echo $total['title']; ?>:</b></td>
+		<td class="right cart-total1 <?php echo $a;?>" style="border: 0px; background-color: #f9f9f9; line-height: 0; padding-left: 30px;"><?php echo $total['text']; ?></td>
 	  </tr>
 	  <?php } ?>
 	</table>
   </div>
-	<div class="buttons">
-	<div class="right"><a href="<?php echo $checkout; ?>" class="button-cont-right"><?php echo $button_checkout; ?><i class="fa fa-check"></i></a></div>
-	<div class="center"><a href="<?php echo $continue; ?>" class="button-cont-right"><?php echo $button_shopping; ?><i class="fa fa-arrow-circle-right"></i></a></div>
+
+	<div class="checkout" style="text-align: right; margin-bottom: 30px;">
+			<a class="button" href="<?php echo $cart; ?>" style="background-color: #CCC"><span><?php echo $button_shopping; ?></span></a> 
+			<a class="button" href="<?php echo $checkout; ?>"><span><?php echo $button_checkout; ?></span></a>
+	</div>
+
   </div>
   </div>
   <?php echo $content_bottom; ?></div>
@@ -306,7 +284,7 @@ $('#button-quote').live('click', function() {
 			if (json['shipping_method']) {
 				html  = '<h2><?php echo $text_shipping_method; ?></h2>';
 				html += '<form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">';
-				html += '  <table class="radio table table-bordered table-hover">';
+				html += '  <table class="radio table table-bordered table-hover" style="border: 0px !important;">';
 				
 				for (i in json['shipping_method']) {
 					html += '<tr>';

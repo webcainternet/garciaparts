@@ -3027,7 +3027,7 @@ i.fa.fa-trash-o-o {
 	font-style:italic;
 	}
 .content.shop-cart-content>p{
-	border:1px solid #e6e6e6;
+	/* border:1px solid #e6e6e6; */
 	border-bottom:0;
 	margin:0;
 	padding:20px;
@@ -3054,7 +3054,7 @@ table#total  td {
 	background-color:#f9f9f9;
 	padding:20px;
 	text-transform:uppercase;
-	width:80%
+	width:100%
 	}
 table#total  td+td {
 	background-color:#fff;
@@ -3077,9 +3077,7 @@ table.radio {
 	}
 .cart-module>div{
 	padding:20px 20px;
-	
-	display:none;
-	border:1px solid #e6e6e6;
+	/* display:none; */
 	border-top:0;
 	border-bottom:0;
 	}
