@@ -1,4 +1,17 @@
 <?php echo $header; ?>
+
+<style type="text/css">
+	.col-sm-9 {
+	    width: 100%;
+	}
+	.right {
+	    width: 100%;
+	}
+	.account {
+		display: none;
+	}
+</style>
+
 <?php if ($error_warning) { ?>
 <div class="col-sm-12">
     <div class="warning"><?php echo $error_warning; ?></div>
