@@ -147,7 +147,7 @@
 					<input type="text" name="coupon" value="<?php echo $coupon; ?>" style="margin: 10px 0px;" />
 					<input type="hidden" name="next" value="coupon" />&nbsp;
 
-					<a onclick="$('#coup').submit();" class="button" style="background-color: #CCC"><span>Aplicar Cupom</span></a>
+					<a onclick="$('#coup').submit();" class="button" style="background-color: #999"><span>Aplicar Cupom</span></a>
 				</div>
 			</div>
 		</form>
@@ -205,7 +205,7 @@
 		</div>
 
 		<div class="controls">
-			<a id="button-quote" class="button" style="background-color: #CCC"><span><?php echo $button_quote; ?></span></a>
+			<a id="button-quote" class="button" style="background-color: #999"><span><?php echo $button_quote; ?></span></a>
 		</div>
 
 	  </div>
@@ -261,7 +261,7 @@ echo $total['text'];
   </div>
 
 	<div class="checkout" style="text-align: right; margin-bottom: 30px;">
-			<a class="button" href="<?php echo $cart; ?>" style="background-color: #CCC"><span><?php echo $button_shopping; ?></span></a> 
+			<a class="button" href="<?php echo $cart; ?>" style="background-color: #999"><span><?php echo $button_shopping; ?></span></a> 
 			<a class="button" href="<?php echo $checkout; ?>"><span><?php echo $button_checkout; ?></span></a>
 	</div>
 
