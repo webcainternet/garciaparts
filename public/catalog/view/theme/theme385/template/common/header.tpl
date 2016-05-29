@@ -119,6 +119,14 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 //--></script>
 <?php } ?>
 
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#btencomendar").click(function(){
+		    $zopim.livechat.window.show();
+	});
+});
+</script>
+
 <!--Start of Zopim Live Chat Script-->
 <script type="text/javascript">
 window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
@@ -140,6 +148,16 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 }(document, 'script', 'facebook-jssdk'));</script>
 <!-- FIM Facebook Like box -->
 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78518316-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 
 <?php echo $google_analytics; ?>
 </head>
@@ -202,34 +220,34 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
     	background-position: 60px 20px;
 	}
 	.cat_2 {
-		background: url(/image/iconsom.png) no-repeat;
-		background-size: 42px;
-    	background-position: 60px 18px;
+		background: url(/image/iconsom2.png) no-repeat;
+	    background-size: 35px;
+    	background-position: 60px 24px;
 	}
 	.cat_3 {
 		background: url(/image/iconxenon.png) no-repeat;
 		background-size: 42px;
-    	background-position: 60px 18px;
+    	background-position: 60px 21px;
 	}
 	.cat_4 {
 		background: url(/image/iconseguranca.png) no-repeat;
 		background-size: 42px;
-    	background-position: 60px 18px;
+    	background-position: 60px 21px;
 	}
 	.cat_5 {
-		background: url(/image/iconmoto.png) no-repeat;
-		background-size: 64px;
-    	background-position: 50px 5px;
+		background: url(/image/iconalarme.png) no-repeat;
+	    background-size: 50px;
+    	background-position: 50px 15px;
 	}
 	.cat_6 {
 		background: url(/image/iconpickup.png) no-repeat;
 		background-size: 72px;
-    	background-position: 40px 5px;
+    	background-position: 40px 8px;
 	}
 	.cat_7 {
-		background: url(/image/iconpneu.png) no-repeat;
-		background-size: 42px;
-    	background-position: 60px 18px;
+		background: url(/image/iconcar.png) no-repeat;
+	    background-size: 80px;
+    	background-position: 45px 5px;
 	}
 	.cat_8 {
 		background: url(/image/icon_som.png) no-repeat;
@@ -266,10 +284,11 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 					<?php if ($logo) { ?>
 						<div id="logo"><a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" /></a></div>
 					<?php } ?>
-					<div style="background-color: blue;">
-						<div class="cart-position" style="float: right; width: 50px; position: absolute; right: 0px; top: 55px;">
-							<span style="font-size: 45px;"><i class="fa fa-question-circle"></i></span>
-						</div>
+					<div>
+						<a><div class="cart-position" style="float: right; width: 50px; position: absolute; right: 10px; top: 52px; text-align: center;" id="btencomendar">
+							<span style="font-size: 32px;"><i class="fa fa-comments-o"></i></span>
+							<span style="text-transform: uppercase;">Chat</span>
+						</div></a>
 
 						<div class="cart-position" style="float: right; width: 270px; position: absolute; right: 70px; top: 55px;">
 							<div class="cart-inner"><?php echo $cart; ?></div>
@@ -292,6 +311,10 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 				</div>
 			</div>
 		</div>
+
+
+
+
 		<?php if ($categories) { ?>
 		<div id="menu-gadget">
 			<div class="row">
@@ -343,6 +366,9 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 			</div>
 		</div>
 		<?php } ?>
+
+
+
 	</div>
 	<?php if ($categories) { ?>
 	<div class="container">

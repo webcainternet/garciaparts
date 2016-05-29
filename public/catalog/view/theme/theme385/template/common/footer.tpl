@@ -37,7 +37,7 @@
 			<div class="footer_box">
 				<h5>Atendimento</h5>
 				<ul class="list-unstyled">
-				<li><a href="/index.php?route=information/contact">Contato</a></li>
+				<li><a href="/contato">Contato</a></li>
 				<li><a href="/index.php?route=account/return/insert">Devoluções</a></li>
 				<li><a href="/index.php?route=information/sitemap">Mapa da Loja</a></li>
 				</ul>
